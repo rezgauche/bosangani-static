@@ -1,0 +1,91 @@
+/* Berlare website
+author @stefmeul*/
+
+/*common styles*/
+
+
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+address {
+    font-style: normal;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* source site background, links, headings colours: 
+https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
+
+img {
+    max-width: 100%;
+}
+
+main {
+    /* background: #354F52;*/
+    background: #080909;
+}
+
+main a {
+    color: #cad2c5;
+    font-size: 1.45rem;
+}
+
+main blockquote {
+    color: #cad2c5;
+    font-size: 1.7rem;
+}
+
+/* source site main font colours: 
+https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
+*/
+
+main h2 {
+    color: #cad2c5;
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+main h2::after {
+    color: transparent;
+    content: "--";
+    display: block;
+    text-decoration: 1px solid line-through;
+    text-decoration-color: #cad2c5;
+}
+
+main h3 {
+    color: #cad2c5;
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+main li {
+    color: #cad2c5;
+    font-size: 2rem;
+}
+
+main p {
+    color: #ced4da;
+    font-size: 1.75rem;
+}
+
+ul {
+    list-style: none;
+}

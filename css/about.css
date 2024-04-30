@@ -1,0 +1,165 @@
+/* Berlare website
+author @stefmeul*/
+
+/*about page styles*/
+
+.about__first__section h2 {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.about__first__section__banner img {
+    display: block;
+    max-width: 60%; 
+    position: relative;
+}
+
+.about__first__section__banner li {
+    background: #2f3e46c2;
+    box-shadow: -0.2rem -0.3rem 0.5rem #223438;
+    left: 15rem;
+    max-width: 35%;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    top: -20rem;
+}
+/*
+.about__first__section__banner p {
+    background: #2f3e46c2;
+    box-shadow: -0.2rem -0.3rem 0.5rem #223438;
+    left: 15rem;
+    max-width: 35%;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    top: -20rem;
+}*/
+
+.about__first__section__text p {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.about__first__section__text li {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+
+/*About second section styles*/
+
+.about__second__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__second__section h2 {
+    text-align: center;
+}
+
+.about__second__section ul {
+    padding: 1rem;
+}
+
+.about__second__section ul > li {
+    color: #ced4da;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    min-width: 100%;
+    padding: 0 1rem;
+}
+
+.about__second__section ul > li::before {
+    content: "» ";
+}
+
+.about__second__section ul > li a {
+    font-size: 1.5rem;
+    text-shadow: 0 0.25rem #223438;
+}
+
+.about__second__section ul > li p {
+    margin-bottom: 1rem;
+}
+
+.about__second__section ul > li span {
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+/*about gallery styles*/
+
+.about__third__section {
+    padding: 5rem;
+}
+
+.about__third__section h2 {
+    margin: 3rem 0;
+}
+
+.about__third__section__gallery figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about__third__section__gallery img {
+    margin: 1rem 0;
+    max-width: 49%;
+}
+
+
+/*About responsive styles 
+
+
+
+@media (min-width: 800px) {
+    
+    .about__first__section__banner img {
+        left: 15rem;
+        max-width: 50%; 
+    }
+    
+    .about__first__section__banner p {
+        left: 45rem;
+        max-width: 30%;
+        padding: 1rem 1rem 8rem 1rem;
+        top: -40rem;
+        
+    }
+    
+    .about__second__section {
+        flex-direction: row;
+    }
+    
+    .about__second__section ul > li {
+        min-width: 30%;
+    }
+}
+
+@media (min-width: 1300px) {
+    
+    .about__first__section__banner img {
+        left: 20rem;
+        max-width: 100%; 
+    }
+    
+    .about__first__section__banner p {
+        left: 75rem;
+        max-width: 30%;
+        top: -45rem;
+    }
+    
+    .about__third__section__gallery figure {
+        flex-wrap: nowrap;
+    }
+    
+    .about__third__section__gallery img {
+        max-width: 23%;
+    }
+}
+
+*/

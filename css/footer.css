@@ -1,0 +1,202 @@
+/* Berlare website
+author @stefmeul*/
+
+
+/*footer styles*/
+
+.footer {
+    background-color: #251704;
+}
+
+.footer li, p, a {
+    color: #cad2c5;
+    text-decoration: none;
+}
+
+
+/*footer doormat styles*/
+
+.doormat {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+    text-shadow: 0 0.25rem #223438;
+}
+
+.doormat__address__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.doormat__address__list a {
+    display: block;
+    font-size: 1rem;
+    margin: 0.1rem 0 0.8rem 0;
+}
+
+.doormat__address__list li {
+    font-size: 1.1rem;
+}
+
+.doormat__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 40%;
+}
+
+.doormat__logo {
+    display: none;
+    min-width: 30%;
+    padding: 0 3rem 0 0;
+}
+
+.doormat__logo img {
+    max-width: 40%;
+}
+
+
+/*footer doormat social styles*/
+
+.doormat__social__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.doormat__social__list a {
+    font-size: 1rem;
+}
+
+.doormat__social__list li {
+    margin: 0 0 0.5rem 0;
+}
+
+.doormat__social__list li+li img {
+    margin: 0.5rem;
+    max-width: 12%;
+}
+
+.doormat__social__list img {
+    margin: 0.3rem;
+    max-width: 15%;
+}
+
+.doormat__social__list span {
+    display: block;
+    font-size: 1rem;
+    margin-left: 2.5rem;
+}
+
+
+/*footer small styles*/
+
+.footer__small {
+    background-color: #12191b;
+}
+
+.footer__small .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__small__list {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+}
+
+.footer__small__list a {
+    text-decoration: underline;
+    text-decoration-color: #84a98c;
+    transition: text-decoration 0.3s;
+
+}
+.footer__small__list a:hover {
+    text-decoration: none;
+}
+
+.footer__small__list li, a {
+    font-size: 0.8rem;
+}
+
+.footer__small__list li {
+    letter-spacing: 0.05rem;
+    padding:0 0.5rem;
+}
+
+.footer__small__logo {
+    max-width: 5%;
+}
+
+
+/*footer responsive styles*/
+
+@media (min-width: 800px) {
+
+    /*footer doormat styles (desktop)*/
+    
+    .doormat__address__list {
+        max-width: 70%;
+    }
+    
+    .doormat__address__list a {
+        font-size: 1.1rem;
+    }
+
+    .doormat__address__list li {
+        font-size: 1.2rem;
+    }
+    
+    .doormat__address__list li+li {
+        align-items: baseline;
+        display: flex;
+    }
+    
+    .doormat__address__list li+li > a {
+        padding-left: 0.5rem;
+    }
+    
+    .doormat__logo {
+        display: contents;
+    }
+
+
+    /*footer social styles(desktop)*/
+
+    .doormat__social__list img {
+        max-width: 20%;
+    }
+    
+    .doormat__social__list li+li img {
+        max-width: 17%;
+    }
+
+    .doormat__social__list span {
+        margin-left: 3rem;
+    }
+
+
+    /*footer small styles (desktop)*/
+
+    .footer__small .wrapper {
+        flex-direction: row;
+    }
+
+    .footer__small__list li, a {
+        font-size: 1rem;
+        padding: 0;
+    }
+   
+    .footer__small__list li + li::before {
+        content: "/";
+        padding: 0 0.5rem;
+    }
+
+    .footer__small__logo {
+        max-width: 2%;
+        padding: 2rem 0 0 0;
+    }
+
+}
