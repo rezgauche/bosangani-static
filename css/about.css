@@ -8,6 +8,34 @@ author @stefmeul*/
     text-align: center;
 }
 
+.topics li {
+    padding-bottom: 1.2rem;
+}
+
+.topics a {
+    background: #2f3e46c2;
+    font-size: 2rem;
+    margin-left: 0.5em;
+    transition: box-shadow 0.5s, letter-spacing 0.3s, text-transform 0.3s;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+
+.topics a:hover {
+    background: #52796f;
+    font-size: 2rem;
+    box-shadow: 0.2rem 0.3rem 0.5rem #223438;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+
+
+
+/*
 .about__first__section__banner img {
     display: block;
     max-width: 60%; 
@@ -23,6 +51,7 @@ author @stefmeul*/
     position: relative;
     top: -20rem;
 }
+*/
 /*
 .about__first__section__banner p {
     background: #2f3e46c2;
@@ -32,7 +61,7 @@ author @stefmeul*/
     padding: 1rem 1rem 1rem 1rem;
     position: relative;
     top: -20rem;
-}*/
+}
 
 .about__first__section__text p {
     margin-bottom: 2rem;
@@ -40,10 +69,16 @@ author @stefmeul*/
 }
 
 .about__first__section__text li {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
     margin-bottom: 2rem;
     padding: 1rem;
 }
+.about__first__section__text a {
+    font-size: 5.75rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+*/
 
 
 /*About second section styles*/
@@ -62,7 +97,7 @@ author @stefmeul*/
     padding: 1rem;
 }
 
-.about__second__section ul > li {
+.about__second__section ul>li {
     color: #ced4da;
     font-size: 1.5rem;
     margin: 1rem 0;
@@ -70,20 +105,20 @@ author @stefmeul*/
     padding: 0 1rem;
 }
 
-.about__second__section ul > li::before {
+.about__second__section ul>li::before {
     content: "» ";
 }
 
-.about__second__section ul > li a {
+.about__second__section ul>li a {
     font-size: 1.5rem;
     text-shadow: 0 0.25rem #223438;
 }
 
-.about__second__section ul > li p {
+.about__second__section ul>li p {
     margin-bottom: 1rem;
 }
 
-.about__second__section ul > li span {
+.about__second__section ul>li span {
     font-family: 'Space Mono', monospace, sans-serif;
     font-weight: 600;
     font-size: 1.2rem;

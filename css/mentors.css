@@ -1,0 +1,139 @@
+/* Berlare website
+author @stefmeul*/
+
+/*contact sections styles*/
+
+
+.teacher-images {
+    max-width: 480px;
+}
+
+
+.contact__first__section h2 {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.contact__info__address h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact__second__section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.contact__info__address {
+    margin-left: 1rem;
+    max-width: 20%;
+}
+
+.contact__info__address a {
+    font-size: 1rem;
+}
+
+
+/*contact page map styles*/
+
+.contact__map iframe {
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+
+/*contact form styles*/
+
+.contact__info__form {
+    min-width: 75%;
+}
+
+.contact__info__form input, textarea {
+    background: #223438;
+    color: #cad2c5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    min-width: 100%;
+}
+
+.contact__info__form label {
+    color: #cad2c5;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.contact__info__form textarea {
+    min-height: 10rem;
+}
+
+.contact__form__inline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.contact__form__inline input {
+    max-width: 100%;
+}
+
+.btn-cta {
+    background: #2f3e46;
+    border: none;
+    border-radius: 3px;
+    color: #cad2c5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-width: 30%;
+    padding: 0.3rem 2rem;
+    text-align: center;
+    transition: background 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
+}
+
+.btn-cta:hover {
+    background: #52796f;
+    box-shadow: 0.1rem 0.1rem 0.2rem #2f3e46;
+    letter-spacing: 0.1rem;
+}
+
+
+/*responsive styles contact form*/
+
+@media (min-width:600px) {
+
+    .contact__info__address a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:900px) {
+
+    .contact__form__inline {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1200px) {
+    .contact__info__form input, textarea {
+        padding: 0 3rem;
+    }
+}
+
+@media (min-width:1500px) {
+    .contact__info__form input, textarea {
+        padding: 0 5rem;
+    }
+
+}
+
+@media (min-width:1700px) {
+    .contact__info__form input, textarea {
+        padding: 0 8rem;
+    }
+}

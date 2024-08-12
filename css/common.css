@@ -22,8 +22,24 @@ address {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 }
 
+
+.modal-content {
+    background: #2f3e46;
+}
+
+.modal-header, .modal-footer {
+    background: #2f3e46;
+    color: #ced4da;
+    ;
+}
+
+.modal-footer button{
+    background: #52796f;
+    color: #ced4da;;
+    }
 /* source site background, links, headings colours: 
 https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
 
@@ -31,10 +47,15 @@ img {
     max-width: 100%;
 }
 
+body main {
+    background-color: #12191b;
+}
+/*
 main {
-    /* background: #354F52;*/
+    background: #354F52;
     background: #080909;
 }
+*/
 
 main a {
     color: #cad2c5;

@@ -5,7 +5,7 @@ author @stefmeul*/
 /*footer styles*/
 
 .footer {
-    background-color: #251704;
+    background: #160404;
 }
 
 .footer li, p, a {
@@ -17,6 +17,7 @@ author @stefmeul*/
 /*footer doormat styles*/
 
 .doormat {
+    
     display: flex;
     justify-content: space-between;
     padding: 5rem 0;
@@ -108,16 +109,16 @@ author @stefmeul*/
 }
 
 .footer__small__list a {
-    text-decoration: underline;
-    text-decoration-color: #84a98c;
-    transition: text-decoration 0.3s;
-
+    text-decoration: none;
+    font-size: 0.8rem;
+    
 }
 .footer__small__list a:hover {
     text-decoration: none;
+    color: #223438;
 }
 
-.footer__small__list li, a {
+.footer__small__list i {
     font-size: 0.8rem;
 }
 
@@ -128,7 +129,14 @@ author @stefmeul*/
 
 .footer__small__logo {
     max-width: 5%;
+    
 }
+.footer__small__logo img {
+    padding-bottom: 1rem;
+
+}
+
+
 
 
 /*footer responsive styles*/
@@ -190,8 +198,8 @@ author @stefmeul*/
     }
    
     .footer__small__list li + li::before {
-        content: "/";
-        padding: 0 0.5rem;
+        content: " ";
+        padding: 0 0.7rem;
     }
 
     .footer__small__logo {
