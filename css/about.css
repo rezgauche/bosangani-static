@@ -9,6 +9,7 @@ author @stefmeul*/
 }
 
 .topics li {
+    max-width: 90%;
     padding-bottom: 1.2rem;
 }
 
@@ -31,16 +32,13 @@ author @stefmeul*/
     text-transform: capitalize;
 }
 
-
-
-
+.about__first__section__banner {
+    display: flex;
+    flex-direction: column;
+}
 
 /*
-.about__first__section__banner img {
-    display: block;
-    max-width: 60%; 
-    position: relative;
-}
+
 
 .about__first__section__banner li {
     background: #2f3e46c2;
@@ -147,54 +145,60 @@ author @stefmeul*/
 }
 
 
-/*About responsive styles 
+/*About responsive styles */
 
 
 
 @media (min-width: 800px) {
-    
-    .about__first__section__banner img {
-        left: 15rem;
-        max-width: 50%; 
-    }
-    
-    .about__first__section__banner p {
-        left: 45rem;
-        max-width: 30%;
-        padding: 1rem 1rem 8rem 1rem;
-        top: -40rem;
-        
-    }
-    
-    .about__second__section {
+
+    .about__first__section__banner {
         flex-direction: row;
+        max-width: 80%;
     }
+}
+
+/*
+.about__first__section__banner img {
+    left: 15rem;
+    max-width: 50%; 
+}
+
+.about__first__section__banner p {
+    left: 45rem;
+    max-width: 30%;
+    padding: 1rem 1rem 8rem 1rem;
+    top: -40rem;
     
-    .about__second__section ul > li {
-        min-width: 30%;
-    }
+}
+
+.about__second__section {
+    flex-direction: row;
+}
+
+.about__second__section ul > li {
+    min-width: 30%;
+}
 }
 
 @media (min-width: 1300px) {
     
-    .about__first__section__banner img {
-        left: 20rem;
-        max-width: 100%; 
-    }
-    
-    .about__first__section__banner p {
-        left: 75rem;
-        max-width: 30%;
-        top: -45rem;
-    }
-    
-    .about__third__section__gallery figure {
-        flex-wrap: nowrap;
-    }
-    
-    .about__third__section__gallery img {
-        max-width: 23%;
-    }
+.about__first__section__banner img {
+    left: 20rem;
+    max-width: 100%; 
 }
 
+.about__first__section__banner p {
+    left: 75rem;
+    max-width: 30%;
+    top: -45rem;
+}
+
+.about__third__section__gallery figure {
+    flex-wrap: nowrap;
+}
+
+.about__third__section__gallery img {
+    max-width: 23%;
+}
+}
 */

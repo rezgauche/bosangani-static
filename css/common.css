@@ -36,6 +36,13 @@ body {
     ;
 }
 
+.modal-header .btn-close {
+    filter: invert(62%) sepia(4%) saturate(469%) hue-rotate(187deg) brightness(98%) contrast(86%);
+    /* Adjust filter values to match your desired color */
+    width: 1.5em;
+    height: 1.5em;
+}
+
 .modal-footer button{
     background: #52796f;
     color: #ced4da;;
