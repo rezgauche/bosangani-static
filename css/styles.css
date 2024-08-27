@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+
+
+/*fonts and headings*/
+
+main h2 {
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+address {
+    font-style: normal;
+}
+
+
+/* Color Theme Swatches in Hex 
+.Vivid-for-Sćhon!-1-hex { color: #8C0327; }
+.Vivid-for-Sćhon!-2-hex { color: #D91448; }
+.Vivid-for-Sćhon!-3-hex { color: #2D6C73; }
+.Vivid-for-Sćhon!-4-hex { color: #6DA0A6; }
+.Vivid-for-Sćhon!-5-hex { color: #F2B705; }
+
+https://color.adobe.com/trends/Fashion?page=4 
+
+ Color Theme Swatches in Hex 
+
+ .BEAUTY-OF-EXISTENCE-1-hex { color: #EFF2EB; }
+.BEAUTY-OF-EXISTENCE-2-hex { color: #BF8C60; #fbbc85 }
+.BEAUTY-OF-EXISTENCE-3-hex { color: #593825; }
+.BEAUTY-OF-EXISTENCE-4-hex { color: #8C5B3E; }
+.BEAUTY-OF-EXISTENCE-5-hex { color: #402116; }
+*/
+
+:root {
+    color-scheme: light dark;
+    /* defined in darkmode.js*/
+}
+
+body {
+    /* Custom default properties */
+    --text-color: #121212;
+    --bkg-color: #f8f7ff;
+    --heading-color:#402116;
+    --link-color:#F2B705;
+    --bkg-light: linear-gradient(140deg, #db0101 2%, #f7a2c5 0.8%, #db0101 2.7%, #db0101 2.7%, #f7a2c5 0.8%, #db0101 3.6%, #db0101 2.7%, #D91448 5%, #F2B705 50%, #8C0327);
+
+    /* Applying custom properties */
+    background-color: var(--bkg-color);
+    color: var(--text-color);
+
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+    background:var(--bkg-light);
+}
+
+/* Body dark theme variables */
+body.dark-theme {
+    --text-color: #fbbc85;
+    --bkg-color: #121212;
+    --heading-color:#F2B705;
+    --link-color:#fbbc85;
+    --bkg-dark: linear-gradient(140deg, #8C0327 2%, #D91448 0.8%, #8C0327 2.7%, #8C0327 2.7%, #D91448 0.8%, #8C0327 3.6%, #8C0327 2.7%, #8C0327 5%, #121212 50%, #8C0327);
+
+    background:var(--bkg-dark);
+}
+
+
+/* Modals */
+
+.modal-header, .modal-footer{
+    border: none;
+}
+.modal-content {
+    background: radial-gradient(circle at 88%, #F2B705, #F2B705 2%, #f7a2c5 38%, #D91448 122%);
+}
+.modal-body p{
+    color: var(--text-color);
+    line-height: 1.8;
+}
+.dark-theme>.modal-body p{
+    color: var(--text-color);
+}
+
+.modal-content.dark-theme {
+    background: radial-gradient(circle at 88%, #121212, #121212 2%, #2D6C73 38%, #8C0327 122%);
+}
+
+.btn-close {
+    filter: invert(80%) sepia(150%) saturate(500%) hue-rotate(350deg) brightness(100%) contrast(100%);
+}
+
+.btn-close:hover {
+    background: #21915324;
+}
+
+.modal-footer button {
+    background: #f7a2c575;
+    color: #dad7e3;
+    border: none;
+}
+
+.modal-footer button:hover {
+    background: #2D6C7375;
+    color: #f7a2c5;
+}
+
+.dark-theme>.modal-footer button {
+    background: #2D6C73;
+    color: #f7a2c5;
+}
+
+.dark-theme>.modal-footer button:hover {
+    background: #f7a2c5;
+    color: #2D6C73;
+}
+
+
+
+
+/*-------------------------------------------*/
+
+
+::selection {
+    background: #fbbc85;
+    color: #402116;
+}
+
+main a {
+    color: var(--link-color);
+    font-size: 1.45rem;
+}
+
+main blockquote {
+    font-size: 1.7rem;
+}
+
+main h2 {
+    color: var(--heading-color);
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+main h2::after {
+    color: transparent;
+    content: "--";
+    display: block;
+    text-decoration: 1px solid line-through;
+    text-decoration-color: var(--heading-color);
+    ;
+}
+
+main h3 {
+    color: var(--heading-color);
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+main li {
+    font-size: 2rem;
+}
+
+main p {
+    font-size: 1.75rem;
+}
+
+ul {
+    list-style: none;
+}

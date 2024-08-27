@@ -2,16 +2,19 @@
 author @stefmeul*/
 
 
-/*footer styles*/
+/*footer styles
 
+*/
 .footer {
-    background: #160404;
-}
+    background: #8C5B3E05;
+    border-top: 0.12rem solid var(--text-color);}
 
 .footer li, p, a {
-    color: #cad2c5;
+    color: var(--text-color);
     text-decoration: none;
 }
+
+
 
 
 /*footer doormat styles*/
@@ -21,7 +24,6 @@ author @stefmeul*/
     display: flex;
     justify-content: space-between;
     padding: 5rem 0;
-    text-shadow: 0 0.25rem #223438;
 }
 
 .doormat__address__list {
@@ -32,12 +34,12 @@ author @stefmeul*/
 
 .doormat__address__list a {
     display: block;
-    font-size: 1rem;
     margin: 0.1rem 0 0.8rem 0;
+    font-size: 1.5rem;
 }
 
 .doormat__address__list li {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
 }
 
 .doormat__list {
@@ -65,7 +67,7 @@ author @stefmeul*/
 }
 
 .doormat__social__list a {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .doormat__social__list li {
@@ -84,7 +86,7 @@ author @stefmeul*/
 
 .doormat__social__list span {
     display: block;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-left: 2.5rem;
 }
 
@@ -92,13 +94,17 @@ author @stefmeul*/
 /*footer small styles*/
 
 .footer__small {
-    background-color: #12191b;
+    background:var(--bkg-light);
+
+}
+.dark-theme .footer__small {
+   background: var(--bkg-dark);   
 }
 
 .footer__small .wrapper {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
 }
 
@@ -124,16 +130,15 @@ author @stefmeul*/
 
 .footer__small__list li {
     letter-spacing: 0.05rem;
-    padding:0 0.5rem;
+    padding: 0.5rem;
 }
 
 .footer__small__logo {
-    max-width: 5%;
+    max-width: 20%;
     
 }
 .footer__small__logo img {
-    padding-bottom: 1rem;
-
+    padding: 2rem;
 }
 
 
@@ -141,7 +146,7 @@ author @stefmeul*/
 
 /*footer responsive styles*/
 
-@media (min-width: 800px) {
+@media (min-width: 1280px) {
 
     /*footer doormat styles (desktop)*/
     
@@ -150,11 +155,11 @@ author @stefmeul*/
     }
     
     .doormat__address__list a {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .doormat__address__list li {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
     
     .doormat__address__list li+li {
@@ -168,6 +173,9 @@ author @stefmeul*/
     
     .doormat__logo {
         display: contents;
+    }
+    .doormat__logo img{
+        min-width: 20%;
     }
 
 
@@ -188,12 +196,10 @@ author @stefmeul*/
 
     /*footer small styles (desktop)*/
 
-    .footer__small .wrapper {
-        flex-direction: row;
-    }
+ 
 
     .footer__small__list li, a {
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 0;
     }
    
@@ -203,8 +209,9 @@ author @stefmeul*/
     }
 
     .footer__small__logo {
-        max-width: 2%;
-        padding: 2rem 0 0 0;
+        display: none;
+
     }
 
+ 
 }

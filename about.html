@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Space+Mono&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <!--
+            <link rel="stylesheet" href="css/common.css">
+            -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
@@ -21,21 +24,28 @@
     <header>
         <nav class="navbar-dark navbar-expand-lg bg-body-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">
-                    <img src="img/LOGO512px.png" alt="Logo" width="150" height="150"
-                        class="d-inline-block align-text-top m-5">
-                </a>
+                <div class="logo-lightswitch">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="img/LOGO512px.png" alt="Logo" width="150" height="150"
+                            class="d-inline-block align-text-top m-5">
+                    </a>
+                    <button type="button" class="lightswitch btn-secondary-dark" onclick="toggleIcon()">
+                        <i class="bi bi-moon icon-light"></i>
+                        <i class="bi bi-brightness-high icon-dark"></i>
+                    </button>
+                </div>
                 <div class="navbar">
                     <div class="header__logo__nav">
                         <nav class="header__nav">
                             <ul class="header__nav__menu">
                                 <li><a href="home.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="header__nav__active"><a href="program.html">Program</a></li>
+                                <li class="header__nav__active"><a href="about.html">About</a></li>
+                                <li><a href="program.html">Program</a></li>
                                 <li><a href="mentors.html">Mentors</a></li>
                             </ul>
                         </nav>
                     </div>
+
                 </div>
             </div>
         </nav>
@@ -45,41 +55,53 @@
         <div class="container pt-5">
             <!--first section content-->
             <section class="about__first__section">
-                <h2>About Bosangani Festival</h2>
-                <div class="about__first__section__banner justify-content-center">
-                    <!-- image poster-->
-                    <div class="c">
-                        <picture>
-                            <source media="(min-width: 800px)" srcset="img/poster2880px.jpg">
-                            <img src="img/poster1920px.jpg" alt="poster">
-                        </picture>
-                    </div>
-                    <!-- Force next columns to break to new line at md breakpoint and up -->
+                <h2>About</h2>
+                <img src="img/poster-4th-1440px.jpg" alt="poster">
+                <div class="justify-content-center pt-5">
                     <!--topics list-->
-                    <div class="align-self-center">
-                        <ul class="topics">
-                            <li class="btn-secondary-dark fs-5">
+                    <div class="container text-center">
+                        <ul class="topics row row-cols-auto pb-5 gap-2">
+                            <li class="col">
                                 <a href="#introduction" data-bs-toggle="modal">introduction</a>
                             </li>
-                            <li>
+                            <li class="col">
                                 <a href="#pilliers" data-bs-toggle="modal">pilliers du projet</a>
                             </li>
-                            <li>
+                            <li class="col">
                                 <a href="#objectifs" data-bs-toggle="modal">objectifs du projet</a>
                             </li>
-                            <li>
+                            <li class="col">
                                 <a href="#localisation" data-bs-toggle="modal">localisation</a>
                             </li>
-                            <li>
+                            <li class="col">
                                 <a href="#direction" data-bs-toggle="modal">direction artistique</a>
                             </li>
-                            <li>
+                            <li class="col">
                                 <a href="#philosophy" data-bs-toggle="modal">philosophie du projet</a>
                             </li>
                         </ul>
                     </div>
+                    <h2>Media</h2>
+                    <!-- image poster-->
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="img/poster2880px.jpg">
+                        <img src="img/poster1920px.jpg" alt="poster">
+                    </picture>
+                    <!-- Sponsors supporters-->
+                    <h2>Support</h2>
+                    <div class="row row-cols-auto justify-content-center pb-5">
+                        <div class="col-4">
+                            <img src="img/PRH_CD_RGB_magenta_EN_LOGO.png" alt="pro-helvetia">
+                        </div>
+                        <div class="col-4 hermes">
+                            <img src="img/Hermes-logo-footer.svg" alt="hermes">
+                        </div>
+                    </div>
                 </div>
-                <!--introduction-->
+            </section>
+            <!--Modals Contents  -->
+            <!--introduction-->
+            <section>
                 <div class="modal fade" id="introduction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
                     tabindex="-1">
                     <div class="modal-dialog modal-dialog-centered">
@@ -146,7 +168,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary fs-5"
-                                    data-bs-dismiss="modal">Back</button>
+                                    data-bs-dismiss="modal">back</button>
                             </div>
                         </div>
                     </div>
@@ -344,13 +366,13 @@
                                 <h2 class="pb-2">
                                     LOCALISATION </h2>
                                 <p>
-                                    Le festival aura lieu dans plusieurs lieux mais principalement à l’Institut
+                                    Le festival aura lieu dans plusieurs lieux mais principalement à l'Institut
                                     Français de
-                                    Kinshasa, cette année, où nous allons nous baser afin d’organiser les workshops,
+                                    Kinshasa, cette année, où nous allons nous baser afin d'organiser les workshops,
                                     les
                                     Masterclass, les concerts et spectacles. Nous prévoyons de faire des conférences
                                     débats, au
-                                    centre Wallonie Bruxelles, et d’autres représentations et projections de vidéos
+                                    centre Wallonie Bruxelles, et d'autres représentations et projections de vidéos
                                     documentaires
                                     seront organisées. Nous descendrons aussi dans les rues avoisinantes de Kinshasa
                                     pour
@@ -361,9 +383,9 @@
                                     tête pour vendre dans les rues de Kinshasa, communément appelé « chayeurs », en
                                     lingala,
                                     sera
-                                    aussi fréquenté ; cela dans l’idée d’aller à la rencontre d’un public varié qui
-                                    n’a pas
-                                    l’habitude de voir ce genre de spectacle.
+                                    aussi fréquenté ; cela dans l'idée d'aller à la rencontre d'un public varié qui
+                                    n'a pas
+                                    l'habitude de voir ce genre de spectacle.
                                 </p>
                             </div>
                             <div class="modal-footer">
@@ -394,7 +416,7 @@
                                     Bosangani. Elle est née et a grandi à Kinshasa. Il y a quelques années, Jolie a
                                     eu
                                     l'opportunité
-                                    de se former en tant qu’interprète de danse contemporaine à P.A.R.T.S.
+                                    de se former en tant qu'interprète de danse contemporaine à P.A.R.T.S.
                                     (Bruxelles). Elle a
                                     par
                                     la suite travaillé en Europe (France, Suisse et Belgique, New-York), pendant
@@ -405,7 +427,7 @@
                                     et
                                     produit ses propres créations. Au terme de plusieurs années de pratique, elle
                                     est devenue
-                                    professeure de danse à l’Académie d’Amsterdam, à l’ECD à Londres, au Tictac art
+                                    professeure de danse à l'Académie d'Amsterdam, à l'ECD à Londres, au Tictac art
                                     centre à
                                     Bruxelles et à la Manufacture (HETSR) à Lausanne CH. Elle garde cependant des
                                     liens
@@ -418,20 +440,20 @@
                                     difficultés
                                     fréquemment rencontrées par les artistes congolais, que ce soit au niveau de la
                                     pénurie
-                                    d’espaces de travail ou de la difficulté de récolter des financements pour leurs
+                                    d'espaces de travail ou de la difficulté de récolter des financements pour leurs
                                     arts. Il
                                     était
                                     donc essentiel pour elle que les participant.e.s puissent être logé.e.s,
                                     rémunéré.e.s et
                                     encadré.e.s correctement durant le festival et les formations. Ce festival vise
                                     également à
-                                    promouvoir des valeurs primordiales telles que le respect de l’autre et de
+                                    promouvoir des valeurs primordiales telles que le respect de l'autre et de
                                     soi-même, le
                                     partage
-                                    et l’éveil de la curiosité, des consciences, de l’échange de connaissances et
-                                    l’empathie
+                                    et l'éveil de la curiosité, des consciences, de l'échange de connaissances et
+                                    l'empathie
                                     ainsi
-                                    que l’amour du prochain. Nous envisageons BOSANGANI comme un évènement
+                                    que l'amour du prochain. Nous envisageons BOSANGANI comme un évènement
                                     fédérateur entre les
                                     institutions et artistes qui forment ensemble le terreau de la création
                                     artistique
@@ -465,32 +487,32 @@
                                     « LE ROYAUME CONGO », Faire renaître la passion des arts ancestraux, en général,
                                     remettre
                                     cette
-                                    âme de la curiosité de la lecture de l’histoire de nos anciens au sein des
+                                    âme de la curiosité de la lecture de l'histoire de nos anciens au sein des
                                     jeunes artistes
                                     et
-                                    plus qu’évident. Nous avançons dans une ère de la vitesse technologique et nous
+                                    plus qu'évident. Nous avançons dans une ère de la vitesse technologique et nous
                                     en oublions
                                     les
-                                    fondamentaux. Qu’en est-il de nos traditions ; de la communication de bouche à
-                                    l’oreille, de
+                                    fondamentaux. Qu'en est-il de nos traditions ; de la communication de bouche à
+                                    l'oreille, de
                                     nos histoires, des bases culturelles ?
                                 </p>
                                 <p>
                                     La clochardisation de la danse avec des participations, en subalterne,
-                                    d’artistes
+                                    d'artistes
                                     danseur.e.s,
                                     dans des clips vidéo de musique, généralement de la Rumba ou du Ndombolo doit
                                     être mise sur
                                     la
-                                    sellette, questionnée afin de remettre le domaine de la danse et de l’histoire
+                                    sellette, questionnée afin de remettre le domaine de la danse et de l'histoire
                                     ancienne de
                                     la
-                                    danse Congolaise à sa place d’antan. Remettre et rendre l’approche
+                                    danse Congolaise à sa place d'antan. Remettre et rendre l'approche
                                     professionnelle à sa
                                     place
                                     avec des jeunes qui seront là pour la continuité et non la rupture après avoir
                                     atteint
-                                    l’Eldorado (l’Europe). L’envie de danser est aujourd’hui évincée par le manque
+                                    l'Eldorado (l'Europe). L'envie de danser est aujourd'hui évincée par le manque
                                     de
                                     perspectives
                                     dû aux pesanteurs socioéconomiques et politiques du pays engendrant la
@@ -506,15 +528,15 @@
                                     des formations orientées vers des administrateurs de groupes et compagnies, avec
                                     des
                                     accompagnements théoriques et pratiques, qui permettront de maitriser
-                                    l’administration dans
+                                    l'administration dans
                                     le
-                                    domaine culturel et artistique ; aussi, l’encadrement professionnel axée sur
-                                    l’éthique, la
+                                    domaine culturel et artistique ; aussi, l'encadrement professionnel axée sur
+                                    l'éthique, la
                                     déontologie et la conscience professionnelles. Car au Congo il y a un manque
                                     criant
-                                    d’accompagnement administratif. D’où ces ateliers de formation, visant à former
+                                    d'accompagnement administratif. D'où ces ateliers de formation, visant à former
                                     les
-                                    administrateurs en devenir fera office de sécurité d’un futur proche au jeunes
+                                    administrateurs en devenir fera office de sécurité d'un futur proche au jeunes
                                     artistes
                                     congolais.e.s.
                                 </p>
@@ -527,6 +549,7 @@
                     </div>
                 </div>
             </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="wrapper">
@@ -579,8 +602,6 @@
                     <li><i class="bi bi-code-slash"><a href="https://rezgauche.be" target="_blank">rezgauche</a></i>
                     </li>
                     <li><i class="bi bi-c-circle"> AUC Production</i></li>
-                    <li></li>
-
                 </ul>
                 <div class="footer__small__logo">
                     <a href="home.html"><img src="img/LOGO512px.png" alt="logo"></a>
@@ -598,6 +619,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 
 </html>

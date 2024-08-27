@@ -3,9 +3,13 @@ author @stefmeul*/
 
 /*index page styles*/
 
-
+.banner{
+    max-width: 80%;
+    filter: brightness(96%);
+}
 .index__first__section {
-    background: #060627;
+    background-color:#00120020;
+
     padding: 5rem 0;
 }
 
@@ -39,17 +43,15 @@ author @stefmeul*/
 }
 
 
-/*second section styles (Agenda)*/
-
-
-/*third section styles (Gezegdes)*/
+/*third section styles (Quotes)*/
 
 .index__third__section {
-    background-color:#001200;
 }
 
 /* Initial state: cards are off-screen */
 .slide-in {
+    background-color:#00120010;
+
     transform: translateX(100vw);
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
@@ -132,7 +134,7 @@ author @stefmeul*/
 /*aside styles (Contact)*/
 
 .index__aside {
-    background: #031d03;
+    background: #031d0320;
     padding: 5rem 0;
 }
 

@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Space+Mono&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/program.css">
+   <!--
+    -->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +24,16 @@
     <header>
         <nav class="navbar-dark navbar-expand-lg bg-body-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">
-                    <img src="img/LOGO512px.png" alt="Logo" width="150" height="150"
-                        class="d-inline-block align-text-top m-5">
-                </a>
+                <div class="logo-lightswitch">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="img/LOGO512px.png" alt="Logo" width="150" height="150"
+                            class="d-inline-block align-text-top m-5">
+                    </a>
+                    <button type="button" class="lightswitch btn-secondary-dark" onclick="toggleIcon()">
+                        <i class="bi bi-moon icon-light"></i>
+                        <i class="bi bi-brightness-high icon-dark"></i>
+                    </button>
+                </div>
                 <div class="navbar">
                     <div class="header__logo__nav">
                         <nav class="header__nav">
@@ -263,6 +271,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/darkmode.js"></script>
 
 </body>
 

@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Space+Mono&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/mentors.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <!--
+        <link rel="stylesheet" href="css/mentors.css">
+    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentors</title>
@@ -21,10 +23,16 @@
     <header>
         <nav class="navbar-dark navbar-expand-lg bg-body-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">
-                    <img src="img/LOGO512px.png" alt="Logo" width="150" height="150"
-                        class="d-inline-block align-text-top m-5">
-                </a>
+                <div class="logo-lightswitch">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="img/LOGO512px.png" alt="Logo" width="150" height="150"
+                            class="d-inline-block align-text-top m-5">
+                    </a>
+                    <button type="button" class="lightswitch btn-secondary-dark" onclick="toggleIcon()">
+                        <i class="bi bi-moon icon-light"></i>
+                        <i class="bi bi-brightness-high icon-dark"></i>
+                    </button>
+                </div>
                 <div class="navbar">
                     <div class="header__logo__nav">
                         <nav class="header__nav">
@@ -47,83 +55,139 @@
                 <h2>Mentors</h2>
                 <!--teachers images-->
                 <div class="row row-cols-3">
-                    <div class="col">Column
+                    <div class="col">
                         <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly kitten with crown, acting royal 60212.jpg" alt="teacher">
+                            data-bs-toggle="modal" data-bs-target="#teacher-info-elie">
+                            <img src="img/elie-720px.jpg" alt="teacher">
                         </button>
                     </div>
-                    <div class="col">Column
+                    <div class="col">
                         <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly2 kitten with crown, acting royal 62358.jpg" alt="teacher">
+                            data-bs-toggle="modal" data-bs-target="#teacher-info-adonis">
+                            <img src="img/Adonis-720px.jpg" alt="teacher">
                         </button>
                     </div>
-                    <div class="col">Column
+                    <div class="col">
                         <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly3 kitten with crown, acting royal 55218.jpg" alt="teacher-info-3">
+                            data-bs-toggle="modal" data-bs-target="#teacher-info-leonce">
+                            <img src="img/Leonce2-720px.jpg" alt="teacher-info-3">
                         </button>
                     </div>
-                    <div class="col">Column
-                        <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
+                    <!--
+                        <div class="col">Column
+                            <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
                             data-bs-toggle="modal" data-bs-target="#teacher-info-1">
                             <img src="img/Firefly4 kitten with crown, acting royal 84836.jpg" alt="teacher-info-4">
                         </button>
                     </div>
                     <div class="col">Column
                         <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly5 black cat with crown and dancing 60212.jpg" alt="teacher-info-4">
-                        </button>
-                    </div>
-                    <div class="col">Column
-                        <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly6 black cat with crown and dancing 55218.jpg" alt="teacher-info-4">
-                        </button>
-                    </div>
-                    <div class="col">Column
-                        <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly7 black cat with crown and dancing 62358.jpg" alt="teacher-info-4">
-                        </button>
-                    </div>
-                    <div class="col">Column
-                        <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly8 black cat with crown and dancing 84836.jpg" alt="teacher-info-4">
-                        </button>
-                    </div>
-                    <div class="col">Column
-                        <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
-                            data-bs-toggle="modal" data-bs-target="#teacher-info-1">
-                            <img src="img/Firefly9 black kitten with crown and dancing 55218.jpg" alt="teacher-info-4">
-                        </button>
-                    </div>
+                        data-bs-toggle="modal" data-bs-target="#teacher-info-1">
+                        <img src="img/Firefly5 black cat with crown and dancing 60212.jpg" alt="teacher-info-4">
+                    </button>
                 </div>
-                <!-- teachers descriptions-->
-                <div class="modal fade" id="teacher-info-1" tabindex="-1" aria-labelledby="exampleModalLabel1"
-                    aria-hidden="false">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-7">Mentor Name</h1>
-                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                <div class="col">Column
+                    <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
+                    data-bs-toggle="modal" data-bs-target="#teacher-info-1">
+                    <img src="img/Firefly6 black cat with crown and dancing 55218.jpg" alt="teacher-info-4">
+                </button>
+            </div>
+            <div class="col">Column
+                <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
+                data-bs-toggle="modal" data-bs-target="#teacher-info-1">
+                <img src="img/Firefly7 black cat with crown and dancing 62358.jpg" alt="teacher-info-4">
+            </button>
+                    </div>
+                    <div class="col">Column
+                        <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
+                        data-bs-toggle="modal" data-bs-target="#teacher-info-1">
+                        <img src="img/Firefly8 black cat with crown and dancing 84836.jpg" alt="teacher-info-4">
+                    </button>
+                </div>
+                <div class="col">Column
+                    <button type="button" class="btn btn--bs-dark-text-emphasis teacher-images"
+                    data-bs-toggle="modal" data-bs-target="#teacher-info-1">
+                    <img src="img/Firefly9 black kitten with crown and dancing 55218.jpg" alt="teacher-info-4">
+                </button>
+            </div>
+        </div>
+        -->
+                    <!-- teachers descriptions-->
+                    <!-- Elie descriptions-->
+
+                    <div class="modal fade" id="teacher-info-elie" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                        aria-hidden="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-7">Élie Autin</h1>
+                                    <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/elie-720px.jpg" alt="mentor1">
+                                    <h3>description
+                                    </h3>
+                                    <p>
+                                        more info soon...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary-dark"
+                                        data-bs-dismiss="modal">Back</button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <img src="img/dancer-icon512px.png" alt="mentor1">
-                                <h3>
-                                    quotation, description
-                                </h3>
-                                <p>
-                                    Kitten Kingdom is a whimsical, enchanting realm where playful kittens reign supreme. In this magical land, every day is filled with cuddles, naps, and joyful purrs. The kingdom thrives on kindness, curiosity, and endless adventures, making it the perfect paradise for feline friends and those who adore them. Welcome to pure, furry bliss
-                                </p>
+                        </div>
+                    </div>
+                    <!-- Adonis descriptions-->
+
+                    <div class="modal fade" id="teacher-info-adonis" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                        aria-hidden="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-7">Adonis Nebie</h1>
+                                    <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/Adonis-720px.jpg" alt="mentor1">
+                                    <h3> description
+                                    </h3>
+                                    <p>
+                                        more info soon...
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary-dark"
+                                        data-bs-dismiss="modal">Back</button>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary-dark"
-                                    data-bs-dismiss="modal">Back</button>
+                        </div>
+                    </div>
+                    <!-- Leonce descriptions-->
+
+                    <div class="modal fade" id="teacher-info-leonce" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                        aria-hidden="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-7">Leonce Noah</h1>
+                                    <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/Leonce1-720px.jpg" alt="mentor1">
+                                    <h3>description
+                                    </h3>
+                                    <p>
+
+                                        more info soon...
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary-dark"
+                                        data-bs-dismiss="modal">Back</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -201,6 +265,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="scripts/darkmode.js"></script>
 
 </body>
 
