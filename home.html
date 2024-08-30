@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Space+Mono&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+    <link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css">
+   
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
@@ -22,22 +26,30 @@
 </head>
 
 <body>
+    <nav class="menu-and-light-buttons navbar sticky-top">
+        <div>
+            <!--nav menu-->
+            <button class="btn menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"><i class="bi bi-list"></i>
+            </button>
+        </div>
+        <div class="logo-lightswitch">
+            <button type="button" class="lightswitch btn-secondary-dark" onclick="toggleIcon()">
+                <i class="bi bi-moon icon-light"></i>
+                <i class="bi bi-brightness-high icon-dark"></i>
+            </button>
+        </div>
+    </nav>
     <header>
-        <nav class="navbar-dark navbar-expand-lg bg-body-dark">
-            <div class="container-fluid">
-                <div class="logo-lightswitch">
-                    <a class="navbar-brand" href="home.html">
-                        <img src="img/LOGO512px.png" alt="Logo" width="150" height="150"
-                            class="d-inline-block align-text-top m-5">
-                    </a>
-                    <button type="button" class="lightswitch btn-secondary-dark" onclick="toggleIcon()">
-                        <i class="bi bi-moon icon-light"></i>
-                        <i class="bi bi-brightness-high icon-dark"></i>
-                    </button>
-                </div>
-                <div class="navbar">
-                    <div class="header__logo__nav">
-                        <nav class="header__nav">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-body" data-bs-scroll="false">
+                <div class="navbar container-fluid text-center">
+                    <div class="header__logo__nav row">
+                        <nav class="header__nav col">
+                            <button type="button" class="btn-close menu-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvas" aria-label="Close"><i
+                                    class="bi bi-x-lg fs-1 pe-5"></i></button>
                             <ul class="header__nav__menu">
                                 <li class="header__nav__active"><a href="home.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
@@ -48,9 +60,11 @@
                     </div>
                 </div>
             </div>
-        </nav>
-        <!--slick caroussel-->
-        <div class="header__banner mb-5 mt-3  container-fluid banner">
+        </div>
+
+        <!--slick caroussel
+        -->
+        <div class="header__banner mb-5 mt-3 banner">
             <div>
                 <picture>
                     <source srcset="img/Banner5760px.jpg" media="(min-width: 2860px)">
@@ -141,9 +155,9 @@
                     </div>
                     <div class="row mb-5 justify-content-end">
                         <div class="col-md-6 p-5 quote-first slide-in">
-                             <blockquote>
-                            CONFÉRENCE
-                                </blockquote>
+                            <blockquote>
+                                CONFÉRENCE
+                            </blockquote>
                             <p>
                                 Le lundi 25 septembre nous étions accueilli dans la résidence de l'Ambassadeur
                                 suisse
@@ -193,7 +207,8 @@
                     <div class="row mb-5 justify-content-end">
                         <div class="col-md-6 quote-first p-5 slide-in">
                             <h3>
-                                <a href="https://youtu.be/QyGFwzDHQdg?si=s_16z1JSoGp3DSt2" target="_blank">CONCERT À LA
+                                <a href="https://youtu.be/QyGFwzDHQdg?si=s_16z1JSoGp3DSt2" target="_blank">CONCERT À
+                                    LA
                                     RÉSIDENCE SUISSE</a>
                             </h3>
                             <p>
@@ -286,7 +301,8 @@
                         <address class="doormat__address">
                             <ul class="doormat__address__list">
                                 <li>Addres:
-                                    <a href="https://maps.app.goo.gl/QrMqjDb3wD9dQ56XA" target="_blank">33 Avenue De La
+                                    <a href="https://maps.app.goo.gl/QrMqjDb3wD9dQ56XA" target="_blank">33 Avenue De
+                                        La
                                         Gombe, Kinshasa, DRC</a>
                                 </li>
                                 <li>Telefoon:
@@ -335,6 +351,7 @@
         </div>
     </footer>
     <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="vendor/bootstrap-js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -357,7 +374,7 @@
     <script src="scripts/slide.js"></script>
     <script src="scripts/lazyload.js"></script>
     <script src="scripts/darkmode.js"></script>
-
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

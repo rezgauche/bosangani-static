@@ -1,27 +1,48 @@
-
-
 /*header styles
 
 */
 
 header a {
-    color:#f8f7ff;
+    color: #f8f7ff;
     text-decoration: none;
 }
 
-.logo-lightswitch{
+.menu-and-light-buttons {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
 }
 
-.lightswitch{
+.menu-button {
+    margin-left: 1.5rem;
+    border: 1px solid #22343815;
+    border-radius: 50px;
+    color: var(--link-color);
+}
+.menu-button > i {
+    font-size: 3.4rem;
+}
+
+.dark-theme .menu-button {
+    color: var(--link-color);
+}
+
+.menu-close {
+    margin: 2rem 0rem;
+    
+}
+
+.lightswitch {
     background: none;
     border: none;
-    font-size: 4rem;
-    color:#f8f7ff;
+    font-size: 3.4rem;
+    color: var(--link-color);
     padding: 2rem 4rem;
+}
+
+.dark-theme .lightswitch {
+    color: var(--link-color);
 }
 
 
@@ -60,34 +81,92 @@ header a {
     display: flex;
     flex-direction: column;
     text-transform: lowercase;
+    padding: 5rem ;
 }
 
 .header__nav__menu a {
     font-size: 2rem;
     margin-left: 0.5em;
-    transition: box-shadow 0.5s, letter-spacing 0.3s, text-transform 0.3s;
+    transition: box-shadow 0.5s, text-transform 0.3s;
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .header__nav__menu a:hover {
     color: #2D6C73;
     box-shadow: 0.2rem 0.3rem 0.5rem #223438;
-    letter-spacing: 0.15rem;
     text-decoration: none;
     text-transform: capitalize;
 }
 
-.header__nav__active > a:hover {
+.header__nav__active>a:hover {
     box-shadow: none;
     border: none;
 }
 
+/*offcanvas menu */
 
-@media (min-width: 800px) {
+.offcanvas {
+    background: var(--bkg-light);
+}
+
+.dark-theme .offcanvas {
+    background: var(--bkg-dark);
+}
+
+/* Make the offcanvas height fit its content */
+.offcanvas.offcanvas-start {
+    padding-right: 5rem;
+    width: auto;
+    /* Let the height be determined by the content */
+    max-width: 100vh;
+    /* Ensure it doesn't exceed the viewport height */
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+/* Optional: If the offcanvas exceeds the viewport height, allow page scrolling 
+body.offcanvas-open {
+    overflow-y: auto;
+}
+*/
+
+.sticky-top {
+    z-index: 1030;
+    /* Ensure it's above other content */
+    }
+    /*
+
+main {
+    z-index: 1000;
+     Lower than the navbar
+    }
     
+    header {
+        z-index: 1010;
+    }
+    
+    
+    @media (min-width: 768px) {
+        
     .header__nav__menu {
         display: flex;
         flex-direction: row;
     }
+    
+    .menu-close {
+        display: none;
+    }
+    .menu-button {
+        display: none;
+    }
+    .offcanvas-md {
+        background: none;
+    }
+    
+    .dark-theme .offcanvas-md {
+        background: none;
+    }
+    
 }
+*/

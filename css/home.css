@@ -4,7 +4,6 @@ author @stefmeul*/
 /*index page styles*/
 
 .banner{
-    max-width: 80%;
     filter: brightness(96%);
 }
 .index__first__section {
@@ -131,79 +130,7 @@ author @stefmeul*/
 }
 
 
-/*aside styles (Contact)*/
 
-.index__aside {
-    background: #031d0320;
-    padding: 5rem 0;
-}
-
-.index__aside h2::after {
-    display: none;
-}
-
-.index__aside .wrapper {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.index__aside__button01 {
-    background: none;
-    border: 1px solid #52796f;
-    border-radius: 3px;
-    display: block;
-    min-width: 100%;
-    padding: 0.3rem 2rem;
-    text-align: center;
-    transition: background 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
-}
-
-.index__aside__button01:hover {
-    background: #52796f;
-    box-shadow: 0.1rem 0.1rem 0.2rem #2f3e46;
-    letter-spacing: 0.1rem;
-}
-
-.index__aside__button02 {
-    background: #2f3e46;
-    border-radius: 3px;
-    display: block;
-    min-width: 100%;
-    padding: 0.3rem 5rem;
-    text-align: center;
-    transition: background 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
-}
-
-.index__aside__button02:hover {
-    background: #52796f;
-    box-shadow: 0.1rem 0.1rem 0.2rem #2f3e46;
-    letter-spacing: 0.1rem;
-}
-
-.index__aside__content h2 {
-    font-size: 1.2rem;
-}
-
-.index__aside__content h3 span {
-    font-size: 1.8rem;
-    text-decoration: 2px line-through;
-    text-decoration-color: #223438;
-}
-
-.index__aside__content p {
-    padding: 1rem 3rem 0 0;
-    margin-bottom: 3rem;
-}
-
-.index__aside__links {
-    min-width: 100%;
-}
-
-.index__aside__links a {
-    margin: 1rem 0;
-}
 
 
 /*responsive styles*/

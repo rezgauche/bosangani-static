@@ -1,30 +1,32 @@
 
 /*about page styles*/
 
-.about__first__section h2 {
-    padding: 5rem 0;
-    text-align: center;
+
+.topics {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-bottom: 10rem;
 }
 
+
 .topics li {
-    max-width: 90%;
-    padding-bottom: 1.2rem;
+    align-content: center;
+    min-width: 26%;
+    background: #593825;
+    transition: box-shadow 0.5s;
+    margin: 2rem 3rem;
 }
 
 .topics a {
-    min-height: 7rem;
-    background: #593825;
     font-size: 2rem;
-    margin-left: 0.5em;
-    transition: box-shadow 0.5s;
     display: inline-block;
-    padding: 2rem 3rem;
+    padding: 2rem;
     text-transform: uppercase;
-
 }
 
 
-.topics a:hover {
+.topics li:hover {
     background: #2D6C7325;
     color: var(--text-color);
     font-size: 2rem;
@@ -32,15 +34,22 @@
     text-decoration: none;
 }
 
-.dark-theme .topics a {    
+.dark-theme .topics li {    
     background: #59384575;
 }
 
-.dark-theme .topics a:hover {
+.dark-theme .topics li:hover {
     background: #8C032725;
     color: var(--text-color);
 }
 
 .hermes img{
 max-width: 20%;
+}
+
+@media (min-width: 768px) {
+        
+    .topics {
+        flex-flow: row wrap;
+    }
 }

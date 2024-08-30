@@ -16,19 +16,6 @@ img {
 
 
 
-/*fonts and headings*/
-
-main h2 {
-    font-family: 'Space Mono', monospace, sans-serif;
-    font-size: 2.4rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-transform: capitalize;
-}
-
-address {
-    font-style: normal;
-}
 
 
 /* Color Theme Swatches in Hex 
@@ -56,9 +43,9 @@ https://color.adobe.com/trends/Fashion?page=4
 
 body {
     /* Custom default properties */
-    --text-color: #121212;
+    --text-color: #402116;
     --bkg-color: #f8f7ff;
-    --heading-color:#402116;
+    --heading-color:#593825;
     --link-color:#F2B705;
     --bkg-light: linear-gradient(140deg, #db0101 2%, #f7a2c5 0.8%, #db0101 2.7%, #db0101 2.7%, #f7a2c5 0.8%, #db0101 3.6%, #db0101 2.7%, #D91448 5%, #F2B705 50%, #8C0327);
 
@@ -82,16 +69,115 @@ body.dark-theme {
     background:var(--bkg-dark);
 }
 
+/*fonts and headings*/
+
+main h2 {
+    font-family: 'Cousine', monospace, sans-serif;
+    letter-spacing: 0.52rem;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    font-size: 3.7rem;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+main h2::after {
+    color: transparent;
+    content: "----";
+    display: block;
+    text-decoration: 3px solid line-through;
+    text-decoration-color: var(--heading-color);
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+}
+address {
+    font-style: normal;
+}
+
+::selection {
+    background: #fbbc85;
+    color: #402116;
+}
+
+main a {
+    color: var(--link-color);
+    font-size: 1.45rem;
+}
+
+main p, a, li {
+    font-family: 'Noto', sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    font-weight: 200;
+ }
+
+main blockquote {
+    font-family: 'Cousine', monospace, sans-serif;
+    font-size: 1.7rem;
+}
+
+
+
+main h3 {
+    color: var(--heading-color);
+    font-family: 'Cousine', monospace, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+
+}
+
+
+
+main li {
+    font-size: 2rem;
+}
+
+main p {
+    font-size: 1.75rem;
+}
+
+ul {
+    list-style: none;
+}
+
+section{
+    margin-bottom: 5rem;
+}
+
+
 
 /* Modals */
+
+.modal-title{
+    color: var(--heading-color);
+    font-family: 'Cousine', monospace, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.52rem;
+    text-transform: uppercase;
+    margin: 2rem 1rem 0rem 1rem;
+}
 
 .modal-header, .modal-footer{
     border: none;
 }
+
+.modal img {
+    padding-bottom: 2rem;
+}
+
 .modal-content {
     background: radial-gradient(circle at 88%, #F2B705, #F2B705 2%, #f7a2c5 38%, #D91448 122%);
 }
-.modal-body p{
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-body p {
     color: var(--text-color);
     line-height: 1.8;
 }
@@ -115,6 +201,7 @@ body.dark-theme {
     background: #f7a2c575;
     color: #dad7e3;
     border: none;
+    font-size: 1.5rem;
 }
 
 .modal-footer button:hover {
@@ -138,55 +225,78 @@ body.dark-theme {
 /*-------------------------------------------*/
 
 
-::selection {
-    background: #fbbc85;
-    color: #402116;
+
+
+/*aside styles (Contact)*/
+
+.index__aside {
+    background: #031d0320;
+    padding: 5rem 0;
 }
 
-main a {
-    color: var(--link-color);
-    font-size: 1.45rem;
+.index__aside h2::after {
+    display: none;
 }
 
-main blockquote {
-    font-size: 1.7rem;
+.index__aside .wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-main h2 {
-    color: var(--heading-color);
-    font-family: 'Space Mono', monospace, sans-serif;
-    font-size: 2.7rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-transform: capitalize;
-}
-
-main h2::after {
-    color: transparent;
-    content: "--";
+.index__aside__button01 {
+    background: none;
+    border: 1px solid #52796f;
+    border-radius: 3px;
     display: block;
-    text-decoration: 1px solid line-through;
-    text-decoration-color: var(--heading-color);
-    ;
+    min-width: 100%;
+    padding: 0.3rem 2rem;
+    text-align: center;
+    transition: background 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
 }
 
-main h3 {
-    color: var(--heading-color);
-    font-family: 'Space Mono', monospace, sans-serif;
-    font-size: 2.4rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-transform: capitalize;
+.index__aside__button01:hover {
+    background: #52796f;
+    box-shadow: 0.1rem 0.1rem 0.2rem #2f3e46;
+    letter-spacing: 0.1rem;
 }
 
-main li {
-    font-size: 2rem;
+.index__aside__button02 {
+    background: #2f3e46;
+    border-radius: 3px;
+    display: block;
+    min-width: 100%;
+    padding: 0.3rem 5rem;
+    text-align: center;
+    transition: background 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
 }
 
-main p {
-    font-size: 1.75rem;
+.index__aside__button02:hover {
+    background: #52796f;
+    box-shadow: 0.1rem 0.1rem 0.2rem #2f3e46;
+    letter-spacing: 0.1rem;
 }
 
-ul {
-    list-style: none;
+.index__aside__content h2 {
+    font-size: 1.2rem;
+}
+
+.index__aside__content h3 span {
+    font-size: 1.8rem;
+    text-decoration: 2px line-through;
+    text-decoration-color: #223438;
+}
+
+.index__aside__content p {
+    padding: 1rem 3rem 0 0;
+    margin-bottom: 3rem;
+}
+
+.index__aside__links {
+    min-width: 100%;
+}
+
+.index__aside__links a {
+    margin: 1rem 0;
 }
