@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -60,512 +62,564 @@
     </header>
     <!--main content-->
     <main>
-        <div class="container pt-5">
-            <!--first section content-->
-            <section class="about__first__section">
-                <h2>About</h2>
-                <img src="img/poster-4th-1440px.jpg" alt="poster">
-                <div class="justify-content-center pt-5">
-                    <!--topics list-->
-                    <div class="container text-center self-align-center">
-                        <ul class="topics mt-5 gap-2">
-                            <li class="col">
-                                <a href="#introduction" data-bs-toggle="modal">introduction</a>
-                            </li>
-                            <li class="col">
-                                <a href="#pilliers" data-bs-toggle="modal">pilliers du projet</a>
-                            </li>
-                            <li class="col">
-                                <a href="#objectifs" data-bs-toggle="modal">objectifs du projet</a>
-                            </li>
-                            <li class="col">
-                                <a href="#localisation" data-bs-toggle="modal">localisation</a>
-                            </li>
-                            <li class="col">
-                                <a href="#direction" data-bs-toggle="modal">direction artistique</a>
-                            </li>
-                            <li class="col">
-                                <a href="#philosophy" data-bs-toggle="modal">philosophie du projet</a>
-                            </li>
-                        </ul>
+        <div class="wrapper">
+            <div class="container pt-5">
+                <!--first section content-->
+                <section class="about__first__section">
+                    <h2>About</h2>
+                    <img src="img/poster-4th-1440px.jpg" alt="poster">
+                    <div class="justify-content-center pt-5">
+                        <!--topics list-->
+                        <div class="container text-center self-align-center">
+                            <ul class="topics mt-5 gap-2">
+                                <li class="col" data-bs-toggle="modal" data-bs-target="#introduction">
+                                    <a href="#introduction">introduction</a>
+                                </li>
+                                <li class="col" data-bs-toggle="modal" data-bs-target="#pilliers">
+                                    <a href="#pilliers">pilliers du projet</a>
+                                </li>
+                                <li class="col" data-bs-toggle="modal" data-bs-target="#objectifs">
+                                    <a href="#objectifs">objectifs du projet</a>
+                                </li>
+                                <li class="col" data-bs-toggle="modal" data-bs-target="#localisation">
+                                    <a href="#localisation">localisation</a>
+                                </li>
+                                <li class="col" data-bs-toggle="modal" data-bs-target="#direction">
+                                    <a href="#direction">direction artistique</a>
+                                </li>
+                                <li class="col" data-bs-toggle="modal" data-bs-target="#philosophy">
+                                    <a href="#philosophy">philosophie du projet</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Media</h2>
+                    <!-- image poster-->
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="img/poster2880px.jpg">
+                        <img src="img/poster1920px.jpg" alt="poster">
+                    </picture>
+
+                    <!-- videos socials-->
+                    <ul class="video-gallery">
+                        <li>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QyGFwzDHQdg?si=zOnpfONVsod2jlIi" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_nrfJz7rGcw?si=LLch65o7Ba_Mit9H" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                        <li id="video-edition23">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8Ivkj6nkCwI?si=dqsr0X-eI9ClRtqX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <video id="delayed-video" width="100%" src="img/bosangani2023-reel.mp4" controls="true"
+                                title="Son: @mizikuteyrecords / Montage vidéo: Genie Oshima">
+                            </video>
+                        </li>
+                    </ul>
+
+                </section>
+                <section>
+
+                    <!-- Sponsors supporters-->
+                    <h2>Support</h2>
+                    <div class="row row-cols-auto justify-content-center pb-5">
+                        <div class="col-3 sized">
+                            <img src="img/PRH_CD_RGB_magenta_EN_LOGO.png" alt="pro-helvetia">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/Hermes-logo-footer.svg" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/Logo_DGWB_RDC_Vertical_Couleur.png" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/Logo-WOW.png" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/Logo-institutFr.png" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/STUK_LOGO.png" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/Logo-DESINGEL.png" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/logo-arsenic.png" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/logo-kaap.png" alt="hermes">
+                        </div>
+                        <div class="col-3 sized">
+                            <img src="img/logo_ch_print.png" alt="hermes">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Modals Contents  -->
+            <!--introduction-->
+            <section>
+                <div class="modal fade" id="introduction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content p-4">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>INTRODUCTION</h2>
+                                <p>
+                                    Le thème de la première édition était “L'union”. Puis « Mettre en valeur les
+                                    femmes sur la scène congolaise » pour l'édition de 2022. Et pour l'édition 2023
+                                    le
+                                    thème choisi etait «KIN LA BELLE ». Sur ce pour la quatrième édition nous
+                                    aimerions parler de la royauté « Le royaume Congo ». À l'époque, du Moyen âge
+                                    jusqu'au début du temps moderne,
+                                    l'Afrique était repartie par des royaumes. Au centre, où se situe le Congo, y
+                                    régnait le
+                                    Royaume Kongo. Un royaume fort, audacieux, remplis de fougue, protecteur de ces
+                                    terres
+                                    et paisible. Cela nous tenait à cœur de parler de cette époque-là ; une époque
+                                    révolue et
+                                    quasiment oubliée dans la mémoire collective congolaise actuelle, par manque
+                                    d'une pédagogie adaptée aux valeurs locales.
+                                </p>
+                                <p>
+                                    Nous avons décidé d'ouvrir les anciennes armoires et parler de notre histoire.
+                                    Une histoire
+                                    passée de nos arrières et arrière grands-parents, remplie de merveilles et de
+                                    sagesse
+                                    communiquées via la tradition orale, de bouche à l'oreille… Histoires racontées
+                                    (Nous sommes
+                                    fièr.e.s, pour cette édition, de revenir là où tout a commencé) renouer avec ce
+                                    passé flou
+                                    de
+                                    l'histoire du royaume Congo. En effet, “bosangani”, en lingala, signifie “se
+                                    réunir” pour
+                                    faire
+                                    quelque chose de bien ou de mal ; mais pour notre part, il s'agit de faire du
+                                    bien pour
+                                    tous. Et
+                                    nous mettons donc l'accent, pour cette quatrième édition, sur l'histoire à
+                                    travers la
+                                    formule de
+                                    l'écoute du savoir. Aussi, la curiosité des artistes est vivement souhaitée
+                                    vis-à-vis du
+                                    thème ;
+                                    ils sont appelés à effectuer de la recherche en vue d'étendre leur champ de la
+                                    connaissance.
+                                </p>
+                                <p>
+                                    Nous nous sommes intéressés, durant toutes ces dernières années, à des artistes
+                                    qui
+                                    participent
+                                    au festival, en leur proposant d'être accompagné.e.s dans leur progression par
+                                    des artistes
+                                    de
+                                    renommée internationale désigné.e.s comme « mentors ». Nous voulons rassembler
+                                    cette année
+                                    une
+                                    équipe de plus ou moins six mentors (congolais et étrangers).
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fs-5"
+                                    data-bs-dismiss="modal">back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--pilliers-->
+                <div class="modal fade" id="pilliers" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content p-4">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>
+                                    PILLIERS DU PROJET
+                                </h2>
+                                <h3 class="pb-2 pt-4">PÉDAGOGIE</h3>
+                                <p>Masterclass pour de jeunes artistes loca.ux.les et internationaux
+                                    données par des
+                                    artistes « mentors » invité.e.s, qui seront suivies d'une présentation publique
+                                    dans les
+                                    rues de
+                                    Kinshasa.
+                                </p>
+                                <h3 class="pb-2 pt-4">Artistique</h3>
+                                <blockquote class="pb-1">Représentations de spectacles nationaux et internationaux.
+                                </blockquote>
+                                <p>
+                                    Cinq spectacles nationaux seront présentés au festival cette année. Des
+                                    spectacles qui
+                                    ont
+
+                                    été suivis par l'asbl AUC Production, en disposant un espace de travail, aux
+                                    artistes,
+                                    un
+                                    accompagne au mieux pour l'aboutissement et la confection d'un produit fini. Les
+                                    mentors
+                                    internationaux invités cette année sont : Elie Autein, Léonce Noah, Stef Meul,
+                                    Adonis Nebie. Ils présenteront leur
+                                    spectacle
+                                    lors
+                                    du festival et certains dirigeront de nouvelles créations avec les jeunes
+                                    artistes
+                                    congolais.e.s.
+                                    L'idée serait de mettre en place une plateforme, de ces artistes, qui développe
+                                    des
+                                    rencontres professionnelles et des projets avenir lors du festival.
+                                </p>
+                                <h3 class="pb-2 pt-4">MEDIATION</h3>
+                                <blockquote class="pb-1">Rencontres, débats et conversations, workshops entre
+                                    artistes invité.e.s et artistes loca.ux.les.</blockquote>
+                                <p>
+                                    BOSANGANI se veut être une initiative artistico-culturelle. Cet évènement
+                                    rassemble
+                                    plusieurs sortes
+                                    de disciplines artistiques allant de la danse aux arts visuels, de la
+                                    performance à
+                                    l'improvisation. Afin de faciliter la création de telles performances et œuvres,
+                                    BOSANGANI
+                                    invite des chorégraphes, Comédien.nes, musicien.nes et artistes plastiques
+                                    établis en
+                                    Afrique et en Europe en tant que panélistes de discussions et/ou de conférences.
+                                    Pouvoir
+                                    proposer des
+                                    perspectives et des contextes culturels différents est une véritable richesse
+                                    pour les
+                                    jeunes artistes de Kinshasa. Les différentes discussions couvriraient des sujets
+                                    tels
+                                    que le
+                                    combat des préjugés propres aux différentes disciplines, régions et expériences,
+                                    ainsi
+                                    que
+                                    l'influence de l'environnement culturel sur la pratique artistique.
+                                </p>
+                                <h3 class="pb-2 pt-4">DIVERSIFICATION DE PUBLICS</h3>
+                                <blockquote class="pb-1">Au Menu :</blockquote>
+                                <p>
+                                    Battles de jeunes danseu.r.se.s pratiquant la danse urbaine. Cette année comme
+                                    l'année
+                                    passée, nous souhaitons faire concourir une dizaine de groupes dans le cadre de
+                                    «
+                                    battles »
+                                    avec une prime d'encouragement à la clé. Il s'agit ici de motiver ces jeunes
+                                    artistes et
+                                    de
+                                    les mettre dans des conditions de représentations publiques. Ces jeunes
+                                    s'exercent
+                                    généralement dans la rue et n'ont que très rarement l'opportunité de promouvoir
+                                    leurs
+                                    créations chorégraphiques dans le cadre d'un évènement professionnel.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fs-5"
+                                    data-bs-dismiss="modal">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--objectifs-->
+                <div class="modal fade" id="objectifs" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content p-4">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="pb-2">
+                                    OBJECTIFS DU PROJET
+                                </h2>
+                                <h3 class="pb-2 pt-4">
+                                    Objectifs généraux liés au projet.
+                                </h3>
+                                <p>
+                                    Pédagogique : Organiser des rencontres entre des artistes locaux et
+                                    internationaux et
+                                    engager
+                                    un travail de collaboration.
+                                </p>
+                                <p>
+                                    Organiser des workshops abordant des méthodes spécifiques de création telles
+                                    que
+                                    l'écriture,
+                                    l'histoire de la danse, les techniques de scénographie, et bien d'autres.
+                                </p>
+                                <h3 class="pb-2 pt-4">
+                                    Objectifs spécifiques du festival
+                                </h3>
+                                <p>
+                                    Promouvoir, auprès du grand public, des productions artistiques
+                                    interdisciplinaires et
+                                    des
+                                    arts
+                                    vivants naturellement remarqués partout dans les rues de Kinshasa
+                                </p>
+
+                                <p> Élargir les horizons de jeunes artistes en les mettant en relation les
+                                    un.e.s avec les
+                                    autres,
+                                    par la création d'un réseau
+                                </p>
+                                <p> Développer les compétences artistiques de participant.e.s par le biais des
+                                    rencontres
+                                    et
+                                    mentorats avec des artistes expérimenté.e.s d'ici et d'ailleurs
+                                </p>
+                                <p> Suivre les jeunes artistes, de manière appuyée, et les encourager dans
+                                    leurs projets
+                                    personnels
+                                </p>
+                                <p> Renforcer la présence des artistes femmes, population très peu représentée
+                                    sur la
+                                    scène
+                                    artistique locale
+                                </p>
+                                Mettre un espace de travail à disposition des artistes
+                                <p>
+                                    Permettre des échanges intellectuels entre les participant.e.s, les
+                                    publics, les
+                                    mentors
+                                    et
+                                    les panelistes
+                                </p>
+                                <p> Promouvoir les créations d'artistes congolais.es auprès des directeurs et
+                                    directrices
+                                    invités
+                                </p>
+                                <p>
+                                    Enrichir les processus de création par le croisement de différentes
+                                    disciplines
+                                    artistiques.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fs-5"
+                                    data-bs-dismiss="modal">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--localisation-->
+                <div class="modal fade" id="localisation" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content p-4">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="pb-2">
+                                    LOCALISATION </h2>
+                                <p>
+                                    Le festival aura lieu dans plusieurs lieux mais principalement à l'Institut
+                                    Français de
+                                    Kinshasa, cette année, où nous allons nous baser afin d'organiser les workshops,
+                                    les
+                                    Masterclass, les concerts et spectacles. Nous prévoyons de faire des conférences
+                                    débats, au
+                                    centre Wallonie Bruxelles, et d'autres représentations et projections de vidéos
+                                    documentaires
+                                    seront organisées. Nous descendrons aussi dans les rues avoisinantes de Kinshasa
+                                    pour
+                                    rencontrer
+                                    les mamans vendeuses de coins de rues. Le commerçant ambulant, porteur des
+                                    marchandises sur
+                                    la
+                                    tête pour vendre dans les rues de Kinshasa, communément appelé « chayeurs », en
+                                    lingala,
+                                    sera
+                                    aussi fréquenté ; cela dans l'idée d'aller à la rencontre d'un public varié qui
+                                    n'a pas
+                                    l'habitude de voir ce genre de spectacle.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fs-5"
+                                    data-bs-dismiss="modal">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--direction-->
+                <div class="modal fade" id="direction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content p-4">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="pb-2">
+                                    DIRECTION ARTISTIQUE
+                                </h2>
+                                <img class="p-5" src="img/jolie-720px.jpg" alt="teacher">
+
+                                <p>
+                                    Jolie Ngemi, danseuse urbaine et traditionnelle de base, est la Directrice
+                                    artistique de
+                                    Bosangani. Elle est née et a grandi à Kinshasa. Il y a quelques années, Jolie a
+                                    eu
+                                    l'opportunité
+                                    de se former en tant qu'interprète de danse contemporaine à P.A.R.T.S.
+                                    (Bruxelles). Elle a
+                                    par
+                                    la suite travaillé en Europe (France, Suisse et Belgique, New-York), pendant
+                                    plusieurs
+                                    années,
+                                    avec différent.e.s chorégraphes. Elle est à présent installée en Suisse où elle
+                                    chorégraphie
+                                    et
+                                    produit ses propres créations. Au terme de plusieurs années de pratique, elle
+                                    est devenue
+                                    professeure de danse à l'Académie d'Amsterdam, à l'ECD à Londres, au Tictac art
+                                    centre à
+                                    Bruxelles et à la Manufacture (HETSR) à Lausanne CH. Elle garde cependant des
+                                    liens
+                                    personnels
+                                    et professionnels avec la ville de Kinshasa, et le territoire de la République
+                                    Démocratique
+                                    du
+                                    Congo de manière plus large. Elle a fondé le festival BOSANGANI et connait bien
+                                    les
+                                    difficultés
+                                    fréquemment rencontrées par les artistes congolais, que ce soit au niveau de la
+                                    pénurie
+                                    d'espaces de travail ou de la difficulté de récolter des financements pour leurs
+                                    arts. Il
+                                    était
+                                    donc essentiel pour elle que les participant.e.s puissent être logé.e.s,
+                                    rémunéré.e.s et
+                                    encadré.e.s correctement durant le festival et les formations. Ce festival vise
+                                    également à
+                                    promouvoir des valeurs primordiales telles que le respect de l'autre et de
+                                    soi-même, le
+                                    partage
+                                    et l'éveil de la curiosité, des consciences, de l'échange de connaissances et
+                                    l'empathie
+                                    ainsi
+                                    que l'amour du prochain. Nous envisageons BOSANGANI comme un évènement
+                                    fédérateur entre les
+                                    institutions et artistes qui forment ensemble le terreau de la création
+                                    artistique
+                                    congolaise.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fs-5"
+                                    data-bs-dismiss="modal">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--philosophy-->
+                <div class="modal fade" id="philosophy" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content p-4">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="pb-2">
+                                    PHILOSOPHIE
+                                </h2>
+                                <h3 class="pb-2 pt-4">
+                                    Thème de 2024
+                                </h3>
+                                <p>
+                                    « LE ROYAUME CONGO », Faire renaître la passion des arts ancestraux, en général,
+                                    remettre
+                                    cette
+                                    âme de la curiosité de la lecture de l'histoire de nos anciens au sein des
+                                    jeunes artistes
+                                    et
+                                    plus qu'évident. Nous avançons dans une ère de la vitesse technologique et nous
+                                    en oublions
+                                    les
+                                    fondamentaux. Qu'en est-il de nos traditions ; de la communication de bouche à
+                                    l'oreille, de
+                                    nos histoires, des bases culturelles ?
+                                </p>
+                                <p>
+                                    La clochardisation de la danse avec des participations, en subalterne,
+                                    d'artistes
+                                    danseur.e.s,
+                                    dans des clips vidéo de musique, généralement de la Rumba ou du Ndombolo doit
+                                    être mise sur
+                                    la
+                                    sellette, questionnée afin de remettre le domaine de la danse et de l'histoire
+                                    ancienne de
+                                    la
+                                    danse Congolaise à sa place d'antan. Remettre et rendre l'approche
+                                    professionnelle à sa
+                                    place
+                                    avec des jeunes qui seront là pour la continuité et non la rupture après avoir
+                                    atteint
+                                    l'Eldorado (l'Europe). L'envie de danser est aujourd'hui évincée par le manque
+                                    de
+                                    perspectives
+                                    dû aux pesanteurs socioéconomiques et politiques du pays engendrant la
+                                    paupérisation de la
+                                    société dans toutes ses couches ; cela a pour conséquences la désertification de
+                                    la scène au
+                                    profit de rien, car les quelques bourgeons qui émergent disparaissent de la
+                                    scène kinoise
+                                    après
+                                    avoir foulé le sol européen. Au-delà des accompagnements et encadrements de
+                                    danseuses, il y
+                                    aura
+                                    des formations orientées vers des administrateurs de groupes et compagnies, avec
+                                    des
+                                    accompagnements théoriques et pratiques, qui permettront de maitriser
+                                    l'administration dans
+                                    le
+                                    domaine culturel et artistique ; aussi, l'encadrement professionnel axée sur
+                                    l'éthique, la
+                                    déontologie et la conscience professionnelles. Car au Congo il y a un manque
+                                    criant
+                                    d'accompagnement administratif. D'où ces ateliers de formation, visant à former
+                                    les
+                                    administrateurs en devenir fera office de sécurité d'un futur proche au jeunes
+                                    artistes
+                                    congolais.e.s.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fs-5"
+                                    data-bs-dismiss="modal">Back</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Media</h2>
-                <!-- image poster-->
-                <picture>
-                    <source media="(min-width: 800px)" srcset="img/poster2880px.jpg">
-                    <img src="img/poster1920px.jpg" alt="poster">
-                </picture>
-            </section>
-            <section>
-
-                <!-- Sponsors supporters-->
-                <h2>Support</h2>
-                <div class="row row-cols-auto justify-content-center pb-5">
-                    <div class="col-4">
-                        <img src="img/PRH_CD_RGB_magenta_EN_LOGO.png" alt="pro-helvetia">
-                    </div>
-                    <div class="col-4 hermes">
-                        <img src="img/Hermes-logo-footer.svg" alt="hermes">
-                    </div>
-                </div>
-        </div>
-        </section>
-        <!--Modals Contents  -->
-        <!--introduction-->
-        <section>
-            <div class="modal fade" id="introduction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-                tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content p-4">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h2>INTRODUCTION</h2>
-                            <p>
-                                Le thème de la première édition était “L'union”. Puis « Mettre en valeur les
-                                femmes sur la scène congolaise » pour l'édition de 2022. Et pour l'édition 2023
-                                le
-                                thème choisi etait «KIN LA BELLE ». Sur ce pour la quatrième édition nous
-                                aimerions parler de la royauté « Le royaume Congo ». À l'époque, du Moyen âge
-                                jusqu'au début du temps moderne,
-                                l'Afrique était repartie par des royaumes. Au centre, où se situe le Congo, y
-                                régnait le
-                                Royaume Kongo. Un royaume fort, audacieux, remplis de fougue, protecteur de ces
-                                terres
-                                et paisible. Cela nous tenait à cœur de parler de cette époque-là ; une époque
-                                révolue et
-                                quasiment oubliée dans la mémoire collective congolaise actuelle, par manque
-                                d'une pédagogie adaptée aux valeurs locales.
-                            </p>
-                            <p>
-                                Nous avons décidé d'ouvrir les anciennes armoires et parler de notre histoire.
-                                Une histoire
-                                passée de nos arrières et arrière grands-parents, remplie de merveilles et de
-                                sagesse
-                                communiquées via la tradition orale, de bouche à l'oreille… Histoires racontées
-                                (Nous sommes
-                                fièr.e.s, pour cette édition, de revenir là où tout a commencé) renouer avec ce
-                                passé flou
-                                de
-                                l'histoire du royaume Congo. En effet, “bosangani”, en lingala, signifie “se
-                                réunir” pour
-                                faire
-                                quelque chose de bien ou de mal ; mais pour notre part, il s'agit de faire du
-                                bien pour
-                                tous. Et
-                                nous mettons donc l'accent, pour cette quatrième édition, sur l'histoire à
-                                travers la
-                                formule de
-                                l'écoute du savoir. Aussi, la curiosité des artistes est vivement souhaitée
-                                vis-à-vis du
-                                thème ;
-                                ils sont appelés à effectuer de la recherche en vue d'étendre leur champ de la
-                                connaissance.
-                            </p>
-                            <p>
-                                Nous nous sommes intéressés, durant toutes ces dernières années, à des artistes
-                                qui
-                                participent
-                                au festival, en leur proposant d'être accompagné.e.s dans leur progression par
-                                des artistes
-                                de
-                                renommée internationale désigné.e.s comme « mentors ». Nous voulons rassembler
-                                cette année
-                                une
-                                équipe de plus ou moins six mentors (congolais et étrangers).
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">back</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--pilliers-->
-            <div class="modal fade" id="pilliers" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-                tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content p-4">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h2>
-                                PILLIERS DU PROJET
-                            </h2>
-                            <h3 class="pb-2 pt-4">PÉDAGOGIE</h3>
-                            <p>Masterclass pour de jeunes artistes loca.ux.les et internationaux
-                                données par des
-                                artistes « mentors » invité.e.s, qui seront suivies d'une présentation publique
-                                dans les
-                                rues de
-                                Kinshasa.
-                            </p>
-                            <h3 class="pb-2 pt-4">Artistique</h3>
-                            <blockquote class="pb-1">Représentations de spectacles nationaux et internationaux.
-                            </blockquote>
-                            <p>
-                                Cinq spectacles nationaux seront présentés au festival cette année. Des
-                                spectacles qui
-                                ont
-
-                                été suivis par l'asbl AUC Production, en disposant un espace de travail, aux
-                                artistes,
-                                un
-                                accompagne au mieux pour l'aboutissement et la confection d'un produit fini. Les
-                                mentors
-                                internationaux invités cette année sont : Elie Autein, Léonce Noah, Stef Meul,
-                                Adonis Nebie and Bui Ngoc Quan.. Ils présenteront leur
-                                spectacle
-                                lors
-                                du festival et certains dirigeront de nouvelles créations avec les jeunes
-                                artistes
-                                congolais.e.s.
-                                L'idée serait de mettre en place une plateforme, de ces artistes, qui développe
-                                des
-                                rencontres professionnelles et des projets avenir lors du festival.
-                            </p>
-                            <h3 class="pb-2 pt-4">MEDIATION</h3>
-                            <blockquote class="pb-1">Rencontres, débats et conversations, workshops entre
-                                artistes invité.e.s et artistes loca.ux.les.</blockquote>
-                            <p>
-                                BOSANGANI se veut être une initiative artistico-culturelle. Cet évènement
-                                rassemble
-                                plusieurs sortes
-                                de disciplines artistiques allant de la danse aux arts visuels, de la
-                                performance à
-                                l'improvisation. Afin de faciliter la création de telles performances et œuvres,
-                                BOSANGANI
-                                invite des chorégraphes, Comédien.nes, musicien.nes et artistes plastiques
-                                établis en
-                                Afrique et en Europe en tant que panélistes de discussions et/ou de conférences.
-                                Pouvoir
-                                proposer des
-                                perspectives et des contextes culturels différents est une véritable richesse
-                                pour les
-                                jeunes artistes de Kinshasa. Les différentes discussions couvriraient des sujets
-                                tels
-                                que le
-                                combat des préjugés propres aux différentes disciplines, régions et expériences,
-                                ainsi
-                                que
-                                l'influence de l'environnement culturel sur la pratique artistique.
-                            </p>
-                            <h3 class="pb-2 pt-4">DIVERSIFICATION DE PUBLICS</h3>
-                            <blockquote class="pb-1">Au Menu :</blockquote>
-                            <p>
-                                Battles de jeunes danseu.r.se.s pratiquant la danse urbaine. Cette année comme
-                                l'année
-                                passée, nous souhaitons faire concourir une dizaine de groupes dans le cadre de
-                                «
-                                battles »
-                                avec une prime d'encouragement à la clé. Il s'agit ici de motiver ces jeunes
-                                artistes et
-                                de
-                                les mettre dans des conditions de représentations publiques. Ces jeunes
-                                s'exercent
-                                généralement dans la rue et n'ont que très rarement l'opportunité de promouvoir
-                                leurs
-                                créations chorégraphiques dans le cadre d'un évènement professionnel.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">Back</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--objectifs-->
-            <div class="modal fade" id="objectifs" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-                tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content p-4">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h2 class="pb-2">
-                                OBJECTIFS DU PROJET
-                            </h2>
-                            <h3 class="pb-2 pt-4">
-                                Objectifs généraux liés au projet.
-                            </h3>
-                            <p>
-                                Pédagogique : Organiser des rencontres entre des artistes locaux et
-                                internationaux et
-                                engager
-                                un travail de collaboration.
-                            </p>
-                            <p>
-                                Organiser des workshops abordant des méthodes spécifiques de création telles
-                                que
-                                l'écriture,
-                                l'histoire de la danse, les techniques de scénographie, et bien d'autres.
-                            </p>
-                            <h3 class="pb-2 pt-4">
-                                Objectifs spécifiques du festival
-                            </h3>
-                            <p>
-
-                                Promouvoir, auprès du grand public, des productions artistiques
-                                interdisciplinaires et
-                                des
-                                arts
-                                vivants naturellement remarqués partout dans les rues de Kinshasa
-                            </p>
-
-                            <p> Élargir les horizons de jeunes artistes en les mettant en relation les
-                                un.e.s avec les
-                                autres,
-                                par la création d'un réseau
-                            </p>
-                            <p> Développer les compétences artistiques de participant.e.s par le biais des
-                                rencontres
-                                et
-                                mentorats avec des artistes expérimenté.e.s d'ici et d'ailleurs
-                            </p>
-                            <p> Suivre les jeunes artistes, de manière appuyée, et les encourager dans
-                                leurs projets
-                                personnels
-                            </p>
-                            <p> Renforcer la présence des artistes femmes, population très peu représentée
-                                sur la
-                                scène
-                                artistique locale
-                            </p>
-                            Mettre un espace de travail à disposition des artistes
-                            <p>
-                                Permettre des échanges intellectuels entre les participant.e.s, les
-                                publics, les
-                                mentors
-                                et
-                                les panelistes
-                            </p>
-                            <p> Promouvoir les créations d'artistes congolais.es auprès des directeurs et
-                                directrices
-                                invités
-                            </p>
-                            <p>
-                                Enrichir les processus de création par le croisement de différentes
-                                disciplines
-                                artistiques.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">Back</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--localisation-->
-            <div class="modal fade" id="localisation" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-                tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content p-4">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h2 class="pb-2">
-                                LOCALISATION </h2>
-                            <p>
-                                Le festival aura lieu dans plusieurs lieux mais principalement à l'Institut
-                                Français de
-                                Kinshasa, cette année, où nous allons nous baser afin d'organiser les workshops,
-                                les
-                                Masterclass, les concerts et spectacles. Nous prévoyons de faire des conférences
-                                débats, au
-                                centre Wallonie Bruxelles, et d'autres représentations et projections de vidéos
-                                documentaires
-                                seront organisées. Nous descendrons aussi dans les rues avoisinantes de Kinshasa
-                                pour
-                                rencontrer
-                                les mamans vendeuses de coins de rues. Le commerçant ambulant, porteur des
-                                marchandises sur
-                                la
-                                tête pour vendre dans les rues de Kinshasa, communément appelé « chayeurs », en
-                                lingala,
-                                sera
-                                aussi fréquenté ; cela dans l'idée d'aller à la rencontre d'un public varié qui
-                                n'a pas
-                                l'habitude de voir ce genre de spectacle.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">Back</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--direction-->
-            <div class="modal fade" id="direction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-                tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content p-4">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h2 class="pb-2">
-                                DIRECTION ARTISTIQUE
-                            </h2>
-                            <img class="p-5" src="img/jolie-720px.jpg" alt="teacher">
-
-                            <p>
-                                Jolie Ngemi, danseuse urbaine et traditionnelle de base, est la Directrice
-                                artistique de
-                                Bosangani. Elle est née et a grandi à Kinshasa. Il y a quelques années, Jolie a
-                                eu
-                                l'opportunité
-                                de se former en tant qu'interprète de danse contemporaine à P.A.R.T.S.
-                                (Bruxelles). Elle a
-                                par
-                                la suite travaillé en Europe (France, Suisse et Belgique, New-York), pendant
-                                plusieurs
-                                années,
-                                avec différent.e.s chorégraphes. Elle est à présent installée en Suisse où elle
-                                chorégraphie
-                                et
-                                produit ses propres créations. Au terme de plusieurs années de pratique, elle
-                                est devenue
-                                professeure de danse à l'Académie d'Amsterdam, à l'ECD à Londres, au Tictac art
-                                centre à
-                                Bruxelles et à la Manufacture (HETSR) à Lausanne CH. Elle garde cependant des
-                                liens
-                                personnels
-                                et professionnels avec la ville de Kinshasa, et le territoire de la République
-                                Démocratique
-                                du
-                                Congo de manière plus large. Elle a fondé le festival BOSANGANI et connait bien
-                                les
-                                difficultés
-                                fréquemment rencontrées par les artistes congolais, que ce soit au niveau de la
-                                pénurie
-                                d'espaces de travail ou de la difficulté de récolter des financements pour leurs
-                                arts. Il
-                                était
-                                donc essentiel pour elle que les participant.e.s puissent être logé.e.s,
-                                rémunéré.e.s et
-                                encadré.e.s correctement durant le festival et les formations. Ce festival vise
-                                également à
-                                promouvoir des valeurs primordiales telles que le respect de l'autre et de
-                                soi-même, le
-                                partage
-                                et l'éveil de la curiosité, des consciences, de l'échange de connaissances et
-                                l'empathie
-                                ainsi
-                                que l'amour du prochain. Nous envisageons BOSANGANI comme un évènement
-                                fédérateur entre les
-                                institutions et artistes qui forment ensemble le terreau de la création
-                                artistique
-                                congolaise.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">Back</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--philosophy-->
-            <div class="modal fade" id="philosophy" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-                tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content p-4">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h2 class="pb-2">
-                                PHILOSOPHIE
-                            </h2>
-                            <h3 class="pb-2 pt-4">
-                                Thème de 2024
-                            </h3>
-                            <p>
-                                « LE ROYAUME CONGO », Faire renaître la passion des arts ancestraux, en général,
-                                remettre
-                                cette
-                                âme de la curiosité de la lecture de l'histoire de nos anciens au sein des
-                                jeunes artistes
-                                et
-                                plus qu'évident. Nous avançons dans une ère de la vitesse technologique et nous
-                                en oublions
-                                les
-                                fondamentaux. Qu'en est-il de nos traditions ; de la communication de bouche à
-                                l'oreille, de
-                                nos histoires, des bases culturelles ?
-                            </p>
-                            <p>
-                                La clochardisation de la danse avec des participations, en subalterne,
-                                d'artistes
-                                danseur.e.s,
-                                dans des clips vidéo de musique, généralement de la Rumba ou du Ndombolo doit
-                                être mise sur
-                                la
-                                sellette, questionnée afin de remettre le domaine de la danse et de l'histoire
-                                ancienne de
-                                la
-                                danse Congolaise à sa place d'antan. Remettre et rendre l'approche
-                                professionnelle à sa
-                                place
-                                avec des jeunes qui seront là pour la continuité et non la rupture après avoir
-                                atteint
-                                l'Eldorado (l'Europe). L'envie de danser est aujourd'hui évincée par le manque
-                                de
-                                perspectives
-                                dû aux pesanteurs socioéconomiques et politiques du pays engendrant la
-                                paupérisation de la
-                                société dans toutes ses couches ; cela a pour conséquences la désertification de
-                                la scène au
-                                profit de rien, car les quelques bourgeons qui émergent disparaissent de la
-                                scène kinoise
-                                après
-                                avoir foulé le sol européen. Au-delà des accompagnements et encadrements de
-                                danseuses, il y
-                                aura
-                                des formations orientées vers des administrateurs de groupes et compagnies, avec
-                                des
-                                accompagnements théoriques et pratiques, qui permettront de maitriser
-                                l'administration dans
-                                le
-                                domaine culturel et artistique ; aussi, l'encadrement professionnel axée sur
-                                l'éthique, la
-                                déontologie et la conscience professionnelles. Car au Congo il y a un manque
-                                criant
-                                d'accompagnement administratif. D'où ces ateliers de formation, visant à former
-                                les
-                                administrateurs en devenir fera office de sécurité d'un futur proche au jeunes
-                                artistes
-                                congolais.e.s.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">Back</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         </div>
         <!--index aside content-->
         <aside class="index__aside">
             <div class="wrapper">
                 <div class="index__aside__content pt-5">
+                    <a href="home.html" class="home-link">
+                        <i class="bi bi-arrow-up-left-square"></i>
+                    </a>
                     <h2>Learn more about</h2>
                     <h3>Bosangani Festival 2024</h3>
                     <p>
-                        “bosangani”, en lingala, signifie “se réunir” pour faire quelque chose de bien ou de mal; mais
+                        “Bosangani”, en lingala, signifie “se réunir” pour faire quelque chose de bien ou de mal; mais
                         pour notre part, il s'agit de faire du bien pour tous.
                     </p>
                 </div>
@@ -588,9 +642,8 @@
                     <li>
                         <address class="doormat__address">
                             <ul class="doormat__address__list">
-                                <li>Addres:
-                                    <a href="https://maps.app.goo.gl/QrMqjDb3wD9dQ56XA" target="_blank">33 Avenue De La
-                                        Gombe, Kinshasa, DRC</a>
+                                <li>Administration Addres:
+                                    <a href="#">70 Bis Matuba, C/Selembao, Kinshasa, DRC</a>
                                 </li>
                                 <li>Telefoon:
                                     <a href="tel:+243978356837">+243978356837</a>

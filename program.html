@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -35,180 +37,497 @@
     </nav>
     <header>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-body" data-bs-scroll="false">
-            <div class="navbar container-fluid text-center">
-                <div class="header__logo__nav row">
-                    <nav class="header__nav col">
-                        <button type="button" class="btn-close menu-close" data-bs-dismiss="offcanvas"
-                            data-bs-target="#offcanvas" aria-label="Close"><i
-                                class="bi bi-x-lg fs-1 pe-5"></i></button>
-                        <ul class="header__nav__menu">
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li class="header__nav__active"><a href="program.html">Program</a></li>
-                            <li><a href="mentors.html">Mentors</a></li>
-                        </ul>
-                    </nav>
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-body" data-bs-scroll="false">
+                <div class="navbar container-fluid text-center">
+                    <div class="header__logo__nav row">
+                        <nav class="header__nav col">
+                            <button type="button" class="btn-close menu-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvas" aria-label="Close"><i
+                                    class="bi bi-x-lg fs-1 pe-5"></i></button>
+                            <ul class="header__nav__menu">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="header__nav__active"><a href="program.html">Program</a></li>
+                                <li><a href="mentors.html">Mentors</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </header>
     <!-- main content-->
     <main>
-        <h2>Festival Schedule</h2>
-        <div class="container text-center  pt-5">
-            <!-- Nav tabs -->
-            <div class="container">
-                <ul class="nav nav-tabs" id="festivalTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="day1-tab" data-toggle="tab" href="#day1" role="tab"
-                            aria-controls="day1" aria-selected="true">Day 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="day2-tab" data-toggle="tab" href="#day2" role="tab" aria-controls="day2"
-                            aria-selected="false">Day 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="day3-tab" data-toggle="tab" href="#day3" role="tab" aria-controls="day3"
-                            aria-selected="false">Day 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="day4-tab" data-toggle="tab" href="#day4" role="tab" aria-controls="day4"
-                            aria-selected="false">Day 4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="day5-tab" data-toggle="tab" href="#day5" role="tab" aria-controls="day5"
-                            aria-selected="false">Day 5</a>
-                    </li>
-                </ul>
+        <div class="wrapper">
+            <section>
 
-                <!-- Tab panes -->
-                <div class="tab-content" id="festivalTabsContent">
-                    <div class="tab-pane fade show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
-                        <div class="list-group">
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 1 Event 1</h3>
-                                <p class="mb-1">10:00 AM - 11:00 AM</p>
-                                <small>Main Stage</small>
-                            </a>
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 1 Event 2</h3>
-                                <p class="mb-1">11:30 AM - 12:30 PM</p>
-                                <small>Stage B</small>
-                            </a>
-                            <!-- Add more events for Day 1 here -->
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
-                        <div class="list-group">
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day2 Event 1</h3>
-                                <p class="mb-1">10:00 AM - 11:00 AM</p>
-                                <small>Main Stage</small>
-                            </a>
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 2 Event 2</h3>
-                                <p class="mb-1">11:30 AM - 12:30 PM</p>
-                                <small>Stage B</small>
-                            </a>
-                            <!-- Add more events for Day 2 here -->
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="day3-tab">
-                        <div class="list-group">
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 3 Event 1</h3>
-                                <p class="mb-1">10:00 AM - 11:00 AM</p>
-                                <small>Main Stage</small>
-                            </a>
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 3 Event 2</h3>
-                                <p class="mb-1">11:30 AM - 12:30 PM</p>
-                                <small>Stage B</small>
-                            </a>
-                            <!-- Add more events for Day 3 here -->
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="day4" role="tabpanel" aria-labelledby="day1-tab">
-                        <div class="list-group">
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 4 Event 1</h3>
-                                <p class="mb-1">10:00 AM - 11:00 AM</p>
-                                <small>Main Stage</small>
-                            </a>
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 4 Event 2</h3>
-                                <p class="mb-1">11:30 AM - 12:30 PM</p>
-                                <small>Stage B</small>
-                            </a>
-                            <!-- Add more events for Day 4 here -->
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="day5" role="tabpanel" aria-labelledby="day1-tab">
-                        <div class="list-group">
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 5 Event 2</h3>
-                                <p class="mb-1">10:00 AM - 11:00 AM</p>
-                                <small>Main Stage</small>
-                            </a>
-                            <a href="#event-info-1" data-bs-toggle="modal"
-                                class="list-group-item list-group-item-action">
-                                <h3 class="mb-1">Day 5 Event 2</h3>
-                                <p class="mb-1">11:30 AM - 12:30 PM</p>
-                                <small>Stage B</small>
-                            </a>
-                            <!-- Add more events for Day 5 here -->
+                <h2>Festival Schedule</h2>
+                <div class="container text-center  pt-5">
+                    <!-- Nav tabs -->
+                    <div class="container schedule">
+                        <ul class="nav nav-tabs" id="festivalTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="day1-tab" data-toggle="tab" href="#day1" role="tab"
+                                    aria-controls="day1" aria-selected="true">Samedi 7 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day2-tab" data-toggle="tab" href="#day2" role="tab"
+                                    aria-controls="day2" aria-selected="false">Lundi 9 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day3-tab" data-toggle="tab" href="#day3" role="tab"
+                                    aria-controls="day3" aria-selected="false">Mardi 10 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day4-tab" data-toggle="tab" href="#day4" role="tab"
+                                    aria-controls="day4" aria-selected="false">Mercredi 11 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day5-tab" data-toggle="tab" href="#day5" role="tab"
+                                    aria-controls="day5" aria-selected="false">Jeudi 12 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day6-tab" data-toggle="tab" href="#day6" role="tab"
+                                    aria-controls="day6" aria-selected="false">Vendredi 13 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day7-tab" data-toggle="tab" href="#day7" role="tab"
+                                    aria-controls="day8" aria-selected="false">Samedi 14 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day8-tab" data-toggle="tab" href="#day8" role="tab"
+                                    aria-controls="day9" aria-selected="false">Dimanche 15 Septembre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="day9-tab" data-toggle="tab" href="#day9" role="tab"
+                                    aria-controls="day10" aria-selected="false">Lundi 16 Septembre</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes event titles and times-->
+                        <!-- day 1 saturday title-->
+                        <div class="tab-content" id="festivalTabsContent">
+                            <div class="tab-pane fade show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-1-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Sélection BATTLE</h3>
+                                        <p class="mb-1">de 12h00 à 15h30</p>
+                                        <small>école belge</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--day 2 monday titles and times-->
+                            <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-2-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Kundalini Tantra Yoga</h3>
+                                        <p>Stef</p>
+                                        <p class="mb-1">de 10h00 à 11h30</p>
+                                        <small>école belge</small>
+                                    </a>
+                                    <a href="#event-info-2-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Ambassa Kibala</p>
+                                        <p class="mb-1">de 11h30 à 13h00</p>
+                                        <small>école belge</small>
+                                    </a>
+                                    <a href="#event-info-2-3" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Léonce Noah</p>
+                                        <p class="mb-1">de 14h00 à 15h00</p>
+                                        <small>école belge</small>
+                                    </a>
+                                    <a href="#event-info-2-4" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Jolie Ngemi</p>
+                                        <p class="mb-1">15h00</p>
+                                        <small>école belge</small>
+                                    </a>
+                                    <a href="#event-info-2-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Final Battle</h3>
+                                        <p class="mb-1">15h30</p>
+                                        <small>école belge</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--day 3 tuesday event title-->
+                            <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-3-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Conférence de press</h3>
+                                        <p>Jolie Ngemi</p>
+                                        <p class="mb-1">10h30</p>
+                                        <small>Ambassade Suisse</small>
+                                    </a>
+                                    <a href="#event-info-3-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Adonis Nebie</p>
+                                        <p class="mb-1">14h30</p>
+                                        <small>Institut français</small>
+                                    </a>
+                                    <a href="#event-info-3-3" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Carnaval</h3>
+                                        <p class="mb-1">16h00</p>
+                                        <small>Rue de bandal</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- day4 wednesday event title -->
+                            <div class="tab-pane fade" id="day4" role="tabpanel" aria-labelledby="day1-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-4-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Kundalini Tantra Yoga</h3>
+                                        <p>Stef</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Petit Hall</small>
+                                    </a>
+                                    <a href="#event-info-4-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse Traditionnel</h3>
+                                        <p>Docta et Amede</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-4-3" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Arts Visual</h3>
+                                        <p>Elie Autin</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Salle de Projection</small>
+                                    </a>
+                                    <a href="#event-info-4-4" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Léonce Noah</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Petit Hall</small>
+                                    </a>
+                                    <a href="#event-info-4-5" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Adonis Nebie</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-4-6" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Administration</h3>
+                                        <p>Karen et Merel</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Salle de Projection</small>
+                                    </a>
+                                    <a href="#event-info-4-7" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Jolie Ngemi</p>
+                                        <p class="mb-1">14h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-4-8" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Ambassa Kibala</p>
+                                        <p class="mb-1">16h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-4-8" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Music Performances</h3>
+                                        <p>ORACLE rap</p>
+                                        <p>KIN ORCHESTRA</p>
+                                        <p class="mb-1">17h30</p>
+                                        <small>Résidence Suisse</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- day5 thursday event title -->
+                            <div class="tab-pane fade" id="day5" role="tabpanel" aria-labelledby="day1-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-5-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Performances</h3>
+                                        <p>Article 15 - Isaac, Steve and Genie</p>
+                                        <p>Five - Stef Meul</p>
+                                        <p>Musique - Moise</p>
+                                        <p class="mb-1">11h00</p>
+                                        <small>Picasso Beach</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- day6 friday event title -->
+                            <div class="tab-pane fade" id="day6" role="tabpanel" aria-labelledby="day1-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-6-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Kundalini Tantra Yoga</h3>
+                                        <p>Stef</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Salle de Projection</small>
+                                    </a>
+                                    <a href="#event-info-6-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Adonis Nebie</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-6-3" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Ambassa Kibala</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Petit Hall</small>
+                                    </a>
+                                    <a href="#event-info-6-4" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse Traditionnel</h3>
+                                        <p>Docta et Amede</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-6-5" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Administration</h3>
+                                        <p>Karen et Merel</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Petit Hall</small>
+                                    </a>
+                                    <a href="#event-info-6-6" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Arts Visuel</h3>
+                                        <p>Elie Autin</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Salle de Projection</small>
+                                    </a>
+                                    <a href="#event-info-6-7" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Jolie Ngemi</p>
+                                        <p class="mb-1">14h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-6-8" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Léonce Noah</p>
+                                        <p class="mb-1">16h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-6-9" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Performances</h3>
+                                        <p>Opening Show</p>
+                                        <p>Présage - Elie Autin</p>
+                                        <p>Ndelo - Tina Bokata</p>
+                                        <p class="mb-1">18h30</p>
+                                        <small>Institut français</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- day7 saturday event title -->
+                            <div class="tab-pane fade" id="day7" role="tabpanel" aria-labelledby="day1-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-7-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Jolie Ngemi</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Petit Hall</small>
+                                    </a>
+                                    <a href="#event-info-7-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Léonce Noah</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-7-3" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Administration</h3>
+                                        <p>Karen et Merel</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Institut français - Salle de Projection</small>
+                                    </a>
+                                    <a href="#event-info-7-4" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Ambassa Kibala</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-7-5" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Kundalini Tantra Yoga</h3>
+                                        <p>Stef</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Petit Hall</small>
+                                    </a>
+                                    <a href="#event-info-7-6" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Arts Visuel</h3>
+                                        <p>Elie Autin</p>
+                                        <p class="mb-1">11h30</p>
+                                        <small>Institut français - Salle de Projection</small>
+                                    </a>
+                                    <a href="#event-info-7-7" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Adonis Nebie</p>
+                                        <p class="mb-1">14h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-7-8" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse Traditionnel</h3>
+                                        <p>Docta et Amede</p>
+                                        <p class="mb-1">16h00</p>
+                                        <small>Institut français - Grand Hall</small>
+                                    </a>
+                                    <a href="#event-info-7-9" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Performances</h3>
+                                        <p>Dézolé du Xilence - Léonce Noah</p>
+                                        <p>Le Corps Objet - Amigo Bonaza</p>
+                                        <p>KININI - Guelord Vulu</p>
+                                        <p>Concert - KIN Orchestra</p>
+                                        <p class="mb-1">18h30</p>
+                                        <small>Institut français</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- day8 sunday event title -->
+                            <div class="tab-pane fade" id="day8" role="tabpanel" aria-labelledby="day1-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-8-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Visionnage et Débats</h3>
+                                        <p>Adonis Nebie, Jolie Ngemi, Léonce Noah, Amsassa Kibala</p>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Ango Ango - centre culturel ANDREE BLOUIN</small>
+                                    </a>
+                                    <a href="#event-info-8-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Performances</h3>
+                                        <p>Rolly Mbonda</p>
+                                        <p>Article 15 - Isaac, Steve and Genie</p>
+                                        <p class="mb-1">18h30</p>
+                                        <small>Terrain Adi C/ Bandalungwa</small>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- day9 monday event title -->
+                            <div class="tab-pane fade" id="day9" role="tabpanel" aria-labelledby="day1-tab">
+                                <div class="list-group">
+                                    <a href="#event-info-9-1" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Débats Constructif</h3>
+                                        <p class="mb-1">10h00</p>
+                                        <small>Centre Wallonie Bruxelles</small>
+                                    </a>
+                                    <a href="#event-info-9-2" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse traditionnel</h3>
+                                        <p>Docta et Amede</p>
+                                        <p class="mb-1">12h00</p>
+                                        <small>Centre Wallonie Bruxelles</small>
+                                    </a>
+                                    <a href="#event-info-9-3" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Ambassa Kibala</p>
+                                        <p class="mb-1">14h00</p>
+                                        <small>Centre Wallonie Bruxelles</small>
+                                    </a>
+                                    <a href="#event-info-9-4" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Jolie Ngemi</p>
+                                        <p class="mb-1">15h00</p>
+                                        <small>Centre Wallonie Bruxelles</small>
+                                    </a>
+                                    <a href="#event-info-9-5" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Léonce Noah, Elie Autin</p>
+                                        <p class="mb-1">16h00</p>
+                                        <small>Centre Wallonie Bruxelles</small>
+                                    </a>
+                                    <a href="#event-info-9-6" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Danse</h3>
+                                        <p>Adonis Nebie</p>
+                                        <p class="mb-1">17h30</p>
+                                        <small>Centre Wallonie Bruxelles</small>
+                                    </a>
+                                    <a href="#event-info-9-7" data-bs-toggle="modal"
+                                        class="list-group-item list-group-item-action">
+                                        <h3 class="mb-1">Performances</h3>
+                                        <p>Présage - Elie Autin</p>
+                                        <p>Brolly Zinga</p>
+                                        <p>Adonis Nebie</p>
+                                        <p class="mb-1">18h30</p>
+                                        <small>Centre Wallonie Bruxelles</small>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- event descriptions-->
-        <div class="modal fade" id="event-info-1" tabindex="-1" aria-labelledby="exampleModalLabel1"
-            aria-hidden="false">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-7" id="exampleModalLabel1">Event Name</h1>
-                        <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/dancer-icon512px.png" alt="event-1">
-                        <h3>
-                            location, description
-                        </h3>
-                        <p>
-                            description of the event. This workshop ....
+                <!-- event descriptions-->
+                <!-- day 1 -->
+                <div class="modal fade" id="event-info-1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                    aria-hidden="false">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-7" id="exampleModalLabel1">Event Name</h1>
+                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/dancer-icon512px.png" alt="event-1">
+                                <h3>
+                                    location, description
+                                </h3>
+                                <p>
+                                    description of the event. This workshop ....
 
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary-dark" data-bs-dismiss="modal">Back</button>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary-dark"
+                                    data-bs-dismiss="modal">Back</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-          <!--index aside content-->
-          <aside class="index__aside">
+        <!--index aside content-->
+        <aside class="index__aside">
             <div class="wrapper">
                 <div class="index__aside__content pt-5">
+                    <a href="home.html" class="home-link">
+                        <i class="bi bi-arrow-up-left-square"></i>
+                    </a>
                     <h2>Learn more about</h2>
                     <h3>Bosangani Festival 2024</h3>
                     <p>
-                        Nous avons décidé d'ouvrir les anciennes armoires et parler de notre histoire.
-                    </p>
+                        BOSANGANI
+                        invite des chorégraphes, Comédien.nes, musicien.nes et artistes plastiques
+                        établis en
+                        Afrique et en Europe en tant que panélistes de discussions et/ou de conférences. </p>
                 </div>
                 <div class="index__aside__links">
                     <a class="index__aside__button01" href="about.html">Learn more about Bosangani</a>
@@ -229,9 +548,8 @@
                     <li>
                         <address class="doormat__address">
                             <ul class="doormat__address__list">
-                                <li>Addres:
-                                    <a href="https://maps.app.goo.gl/QrMqjDb3wD9dQ56XA" target="_blank">33 Avenue De La
-                                        Gombe, Kinshasa, DRC</a>
+                                <li>Administration Addres:
+                                    <a href="#">70 Bis Matuba, C/Selembao, Kinshasa, DRC</a>
                                 </li>
                                 <li>Telefoon:
                                     <a href="tel:+243978356837">+243978356837</a>

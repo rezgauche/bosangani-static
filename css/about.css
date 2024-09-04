@@ -16,6 +16,7 @@
     background: #593825;
     transition: box-shadow 0.5s;
     margin: 2rem 3rem;
+    cursor: pointer; /* Make the entire item clickable */
 }
 
 .topics a {
@@ -25,10 +26,17 @@
     text-transform: uppercase;
 }
 
+.topics a:hover{
+    color: var(--heading-color);
+}
+
+.dark-theme .topics a:hover{
+    color: var(--heading-color);
+}
+
 
 .topics li:hover {
     background: #2D6C7325;
-    color: var(--text-color);
     font-size: 2rem;
     box-shadow: 0.2rem 0.3rem 0.5rem #223438;
     text-decoration: none;
@@ -43,13 +51,57 @@
     color: var(--text-color);
 }
 
-.hermes img{
-max-width: 20%;
+.video-gallery{
+    display: flex;
+    flex-flow: column;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+    margin-top: 5rem;
+
 }
+.video-gallery li{
+    align-content: center;
+    min-width: 45%;
+    max-width: 100%;
+    height: 100%;
+    padding: 0rem 2rem;
+    margin: 1rem 0rem;
+    object-fit: contain;  /* Maintain aspect ratio while fitting within the max height */
+
+}
+
+.video-gallery iframe{
+    max-width: 100%;
+}
+
+
+/* logo sizing */
+.sized {
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+}
+
+/* Set a maximum width and height for images to make them uniform */
+.sized img {
+    max-width: 100%;  /* Make sure the image never exceeds its container's width */
+    max-height: 190px;  /* Set a uniform height for all logos */
+    object-fit: contain;  /* Maintain aspect ratio while fitting within the max height */
+    padding: 10px; /* Optional: Add some padding around the images */
+}
+
+.row {
+    gap: 2rem; /* Add spacing between columns if needed */
+}
+
+
 
 @media (min-width: 768px) {
         
     .topics {
+        flex-flow: row wrap;
+    }
+    .video-gallery {
         flex-flow: row wrap;
     }
 }

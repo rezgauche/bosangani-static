@@ -7,7 +7,8 @@ author @stefmeul*/
 */
 .footer {
     background: #8C5B3E05;
-    border-top: 0.12rem solid var(--text-color);}
+    border-top: 0.12rem solid var(--text-color);
+}
 
 .footer li, p, a {
     color: var(--text-color);
@@ -20,8 +21,9 @@ author @stefmeul*/
 /*footer doormat styles*/
 
 .doormat {
-    
+
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 5rem 0;
 }
@@ -94,11 +96,12 @@ author @stefmeul*/
 /*footer small styles*/
 
 .footer__small {
-    background:var(--bkg-light);
+    background: var(--bkg-light);
 
 }
+
 .dark-theme .footer__small {
-   background: var(--bkg-dark);   
+    background: var(--bkg-dark);
 }
 
 .footer__small .wrapper {
@@ -117,8 +120,9 @@ author @stefmeul*/
 .footer__small__list a {
     text-decoration: none;
     font-size: 0.8rem;
-    
+
 }
+
 .footer__small__list a:hover {
     text-decoration: none;
     color: #223438;
@@ -135,8 +139,9 @@ author @stefmeul*/
 
 .footer__small__logo {
     max-width: 20%;
-    
+
 }
+
 .footer__small__logo img {
     padding: 2rem;
 }
@@ -146,14 +151,21 @@ author @stefmeul*/
 
 /*footer responsive styles*/
 
+@media (min-width: 425px) {
+    
+    .doormat {
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 1280px) {
 
     /*footer doormat styles (desktop)*/
-    
+
     .doormat__address__list {
         max-width: 70%;
     }
-    
+
     .doormat__address__list a {
         font-size: 1.5rem;
     }
@@ -161,20 +173,21 @@ author @stefmeul*/
     .doormat__address__list li {
         font-size: 1.7rem;
     }
-    
+
     .doormat__address__list li+li {
         align-items: baseline;
         display: flex;
     }
-    
-    .doormat__address__list li+li > a {
+
+    .doormat__address__list li+li>a {
         padding-left: 0.5rem;
     }
-    
+
     .doormat__logo {
         display: contents;
     }
-    .doormat__logo img{
+
+    .doormat__logo img {
         min-width: 20%;
     }
 
@@ -184,7 +197,7 @@ author @stefmeul*/
     .doormat__social__list img {
         max-width: 20%;
     }
-    
+
     .doormat__social__list li+li img {
         max-width: 17%;
     }
@@ -196,14 +209,14 @@ author @stefmeul*/
 
     /*footer small styles (desktop)*/
 
- 
+
 
     .footer__small__list li, a {
         font-size: 1.3rem;
         padding: 0;
     }
-   
-    .footer__small__list li + li::before {
+
+    .footer__small__list li+li::before {
         content: " ";
         padding: 0 0.7rem;
     }
@@ -213,5 +226,5 @@ author @stefmeul*/
 
     }
 
- 
+
 }

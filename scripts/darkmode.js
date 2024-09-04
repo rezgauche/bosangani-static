@@ -8,7 +8,7 @@
     const darkIcon = btn.querySelector(".icon-dark");
 
     // Load theme from localStorage
-    const currentTheme = localStorage.getItem("theme") || "light";
+    const currentTheme = localStorage.getItem("theme") || "dark";
 
     if (currentTheme === "dark") {
         body.classList.add("dark-theme");

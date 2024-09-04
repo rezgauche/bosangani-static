@@ -7,7 +7,7 @@ author @stefmeul*/
     filter: brightness(96%);
 }
 .index__first__section {
-    background-color:#00120020;
+    background-color:#ffffff07;
 
     padding: 5rem 0;
 }
@@ -17,10 +17,11 @@ author @stefmeul*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0rem 3rem;
 }
 
 .index__first__section__link {
-    background: #2f3e46;
+    background: #593825;
     border-radius: 3px;
     display: block;
     min-width: 100%;
@@ -30,9 +31,20 @@ author @stefmeul*/
 }
 
 .index__first__section__link:hover {
-    background: #52796f;
+    background: #2D6C7325;
     box-shadow: 0.1rem 0.1rem 0.2rem #2f3e46;
+    color: var(--text-color);
     letter-spacing: 0.1rem;
+}
+
+
+.dark-theme .index__first__section__link {
+    background: #59384575 
+}
+
+.dark-theme .index__first__section__link:hover {
+    background: #8C032725;
+    color: var(--heading-color);
 }
 
 .index__first__section__content p {
@@ -41,11 +53,6 @@ author @stefmeul*/
 
 }
 
-
-/*third section styles (Quotes)*/
-
-.index__third__section {
-}
 
 /* Initial state: cards are off-screen */
 .slide-in {
@@ -130,65 +137,22 @@ author @stefmeul*/
 }
 
 
-
-
-
 /*responsive styles*/
-
-@media (min-width: 500px) {
-
-    /*second section Agenda (tablet)*/
-    .index__second__section__list li {
-        padding: 0 7rem;
-    }
-}
 
 @media (min-width: 800px) {
 
-    /*first section Berlare styles (desktop)*/
+    
     .index__first__section__content {
         align-items: center;
         flex-direction: row;
     }
-
+    
     .index__first__section__link {
         min-width: 40%;
     }
-
+    
     .index__first__section__content p {
         padding-right: 3rem;
         max-width: 50%;
-    }
-
-
-
-    /*aside styles Contact (desktop)*/
-
-    .index__aside .wrapper {
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .index__aside__button01 {
-        display: inline-block;
-        min-width: 40%;
-    }
-
-    .index__aside__button02 {
-        display: inline-block;
-        min-width: 40%;
-    }
-
-    .index__aside__content {
-        max-width: 40%;
-    }
-
-    .index__aside__links {
-        text-align: end;
-        min-width: 60%;
-    }
-
-    .index__aside__links a {
-        margin-left: 1rem;
     }
 }
