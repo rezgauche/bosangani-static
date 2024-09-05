@@ -1,24 +1,7 @@
-* {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    margin: 0;
-    padding: 0;
-}
+/* Bosangani Website 
+by rezgauche 
 
-img {
-    max-width: 100%;
-}
-
-.wrapper {
-    margin: 0 auto;
-    max-width: 85%;
-}
-
-
-
-
-
-/* Color Theme Swatches in Hex 
+Color Theme Swatches in Hex 
 .Vivid-for-Sćhon!-1-hex { color: #8C0327; }
 .Vivid-for-Sćhon!-2-hex { color: #D91448; }
 .Vivid-for-Sćhon!-3-hex { color: #2D6C73; }
@@ -35,6 +18,29 @@ https://color.adobe.com/trends/Fashion?page=4
 .BEAUTY-OF-EXISTENCE-4-hex { color: #8C5B3E; }
 .BEAUTY-OF-EXISTENCE-5-hex { color: #402116; }
 */
+
+
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    filter:brightness(87%);
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+address{
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
 
 :root {
     color-scheme: light dark;
@@ -79,7 +85,6 @@ main h2 {
     font-size: 3.7rem;
     font-weight: 700;
     text-align: center;
-
 }
 
 main h2::after {
@@ -118,8 +123,6 @@ main blockquote {
     font-size: 1.7rem;
 }
 
-
-
 main h3 {
     color: var(--heading-color);
     font-family: 'Cousine', monospace, sans-serif;
@@ -127,10 +130,7 @@ main h3 {
     font-weight: 700;
     letter-spacing: 0.2rem;
     text-transform: capitalize;
-
 }
-
-
 
 main li {
     font-size: 2rem;
@@ -223,17 +223,7 @@ section {
 }
 
 
-
-
-/*-------------------------------------------*/
-
-
-
-
 /*aside styles*/
-
-
-
 
 .index__aside {
     background: #ffffff07;
@@ -251,12 +241,10 @@ section {
     justify-content: space-between;
 }
 
-
 .home-link {
 color: var(--link-color);
 font-size: 2.5rem;
 }
-
 
 .index__aside__button01 {
     background: none;
@@ -269,7 +257,6 @@ font-size: 2.5rem;
     text-align: center;
     transition: background 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
 }
-
 
 .index__aside__button01:hover {
     background: #2D6C7325;

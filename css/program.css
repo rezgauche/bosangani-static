@@ -1,5 +1,5 @@
 /* Bosangani website
-author @stefmeul*/
+by rezgauche */
 
 /*program page styles*/
 
@@ -9,7 +9,6 @@ body main {
 
 .schedule{
     min-height: 50rem;
-
 }
 
 .blog__main__section h2 {
@@ -46,7 +45,6 @@ body main {
     color: var(--link-color);
 }
 
-
 .dark-theme .nav-tabs .nav-link {
     background: none;
     border: 1px solid #593825;
@@ -65,7 +63,6 @@ body main {
     box-shadow: 0.1rem 0.1rem 0.2rem #2f3e46;
     color: var(--heading-color);
 }
-
 
 .list-group-item {
     background: none;

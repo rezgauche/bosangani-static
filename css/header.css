@@ -138,7 +138,8 @@ header a {
 .sticky-top {
     z-index: 1030;
     background-color: #db010110;
-    margin-bottom: 2rem;
+    border-bottom: 3px solid #e2d7d710 ;
+
     /* Ensure it's above other content */
     }
   

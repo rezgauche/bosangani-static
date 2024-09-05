@@ -74,6 +74,21 @@
     max-width: 100%;
 }
 
+/* media img sizing */
+.size-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertically center the image */
+    justify-content: space-around; /* Horizontally center the image */
+}
+
+/* Set a maximum width and height for images to make them uniform */
+.size-media img {
+    max-width: 86%;  /* Make sure the image never exceeds its container's width */
+    max-height: 720px;  /* Set a uniform height for all logos */
+    object-fit: contain;  /* Maintain aspect ratio while fitting within the max height */
+}
+
 
 /* logo sizing */
 .sized {
@@ -103,5 +118,8 @@
     }
     .video-gallery {
         flex-flow: row wrap;
+    }
+    .size-media {
+        flex-direction: row;
     }
 }
