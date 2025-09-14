@@ -21,9 +21,9 @@ https://color.adobe.com/trends/Fashion?page=4
 body {
     --s: 20px;
     /* control the size*/
-    --c1: #d8d8d8;
+    --c1: #f6e82a;
     --c2: #bb2528;
-    --c3: #146b3a;
+    --c3: #0bb0f7;
 
     --b: calc(var(--s)/2.67);
     /* control the thickness of the wavy line */
