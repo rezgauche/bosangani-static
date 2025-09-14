@@ -7,7 +7,15 @@ body main {
     max-width: 100%;
 }
 
-.schedule{
+
+.index__first__section {
+    background-color: #232523e5;
+
+    padding: 5rem 0;
+    border-radius: 20px;
+}
+
+.schedule {
     min-height: 50rem;
 }
 
@@ -20,6 +28,7 @@ body main {
     padding: 5rem 0;
     text-align: center;
 }
+
 .nav-tabs {
     border: none;
     margin-bottom: 2rem;
@@ -83,8 +92,7 @@ body main {
     border: 1px solid #2f3e46;
 }
 
-.dark-theme 
-.list-group-item:focus,
+.dark-theme .list-group-item:focus,
 .list-group-item:active {
     background: #ffffff07;
     color: var(--heading-color);

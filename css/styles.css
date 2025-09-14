@@ -18,7 +18,29 @@ https://color.adobe.com/trends/Fashion?page=4
 .BEAUTY-OF-EXISTENCE-4-hex { color: #8C5B3E; }
 .BEAUTY-OF-EXISTENCE-5-hex { color: #402116; }
 */
+body {
+    --s: 20px;
+    /* control the size*/
+    --c1: #d8d8d8;
+    --c2: #bb2528;
+    --c3: #146b3a;
 
+    --b: calc(var(--s)/2.67);
+    /* control the thickness of the wavy line */
+
+    --_r: calc(1.28*var(--s) + var(--b)/2) at left 50%;
+    --_f: calc(100% - var(--b)), var(--c1) calc(101% - var(--b)) 100%, #0000 101%;
+    --g0: calc(-.8*var(--s)), var(--c2) var(--_f);
+    --g1: calc(-.8*var(--s)), var(--c3) var(--_f);
+    --_s: calc(1.5*var(--s) + var(--b));
+    background:
+        radial-gradient(var(--_r) bottom var(--g0)) calc(2*var(--s)) calc(-1*var(--_s)),
+        radial-gradient(var(--_r) bottom var(--g1)) calc(-1*var(--s)) calc(var(--_s)/-2),
+        radial-gradient(var(--_r) top var(--g1)) 0 var(--_s),
+        radial-gradient(var(--_r) top var(--g0)) var(--s) calc(var(--_s)/ 2),
+        linear-gradient(var(--c2) 50%, var(--c3) 0);
+    background-size: calc(4*var(--s)) var(--_s);
+}
 
 * {
     box-sizing: border-box;
@@ -43,32 +65,33 @@ address {
 }
 
 :root {
-    color-scheme: light dark;
-    /* defined in darkmode.js*/
-    /* Custom default properties */
-    --text-color: #402116;
-    --bkg-color: #f8f7ff;
-    --heading-color: #593825;
-    --link-color: #F2B705;
+    /* color-scheme: light dark; */
 
-    /* Background image */
-    --bkg-light: url(/img/bg-tile.png);
+    --text-color-dark: #402116;
+    --text-color: #fbbc85;
+    /* --bkg-color: #f8f7ff; */
+    /* --heading-color: #593825; */
+    --heading-color: #F2B705;
+
+    --link-color: #F2B705;
 }
 
+
+
+
+
 body {
-    background-color: var(--bkg-color);
+    /* Comment out or remove conflicting background styles */
+    /* background-color: var(--bkg-color); */
     color: var(--text-color);
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
 
-    /* Apply the background image as a repeating tile */
-    background-image: var(--bkg-light);
-    background-repeat: repeat;
-    /* repeats horizontally + vertically */
-    background-position: top left;
-    /* starting point */
-    background-size: auto;
-    /* use image's natural size (remove if you want scaling) */
+    /* Remove all commented-out background properties */
+    /* background-image: var(--bkg-light); */
+    /* background-repeat: repeat;
+  background-position: top left;
+  background-size: auto; */
 }
 
 
@@ -86,7 +109,7 @@ body {
 } */
 
 /* Body dark theme variables */
-body.dark-theme {
+/* body.dark-theme {
     --text-color: #fbbc85;
     --bkg-color: #121212;
     --heading-color: #F2B705;
@@ -94,7 +117,7 @@ body.dark-theme {
     --bkg-dark: linear-gradient(140deg, #8C0327 2%, #D91448 0.8%, #8C0327 2.7%, #8C0327 2.7%, #D91448 0.8%, #8C0327 3.6%, #8C0327 2.7%, #8C0327 5%, #121212 50%, #8C0327);
 
     background: var(--bkg-dark);
-}
+} */
 
 /*fonts and headings*/
 
@@ -103,7 +126,7 @@ main h2 {
     letter-spacing: 0.52rem;
     text-transform: uppercase;
     color: var(--heading-color);
-    font-size: 3.7rem;
+    font-size: 5.7rem;
     font-weight: 700;
     text-align: center;
 }
@@ -250,8 +273,10 @@ section {
 /*aside styles*/
 
 .index__aside {
-    background: #ffffff07;
-    padding: 5rem 0;
+    /* background: #ffffff07;
+    padding: 5rem 0; */
+    background-color: #0f1002dc;
+    padding: 5rem 0rem;
 }
 
 .index__aside h2::after {

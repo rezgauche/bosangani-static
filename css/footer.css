@@ -6,11 +6,13 @@ author @stefmeul*/
 
 */
 .footer {
-    background: #8C5B3E05;
+    background: #20150fea;
     border-top: 0.12rem solid var(--text-color);
 }
 
-.footer li, p, a {
+.footer li,
+p,
+a {
     color: var(--text-color);
     text-decoration: none;
 }
@@ -152,7 +154,7 @@ author @stefmeul*/
 /*footer responsive styles*/
 
 @media (min-width: 425px) {
-    
+
     .doormat {
         flex-direction: row;
     }
@@ -211,7 +213,8 @@ author @stefmeul*/
 
 
 
-    .footer__small__list li, a {
+    .footer__small__list li,
+    a {
         font-size: 1.3rem;
         padding: 0;
     }
