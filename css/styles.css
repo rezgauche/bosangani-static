@@ -377,3 +377,7 @@ section {
     text-align: center;
     margin: 1rem 0;
 }
+
+.video {
+    max-width: 80%;
+}
