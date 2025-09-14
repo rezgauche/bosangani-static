@@ -29,7 +29,7 @@ https://color.adobe.com/trends/Fashion?page=4
 
 img {
     max-width: 100%;
-    filter:brightness(87%);
+    filter: brightness(87%);
 }
 
 .wrapper {
@@ -37,7 +37,7 @@ img {
     max-width: 85%;
 }
 
-address{
+address {
     color: var(--text-color);
     font-size: 1.2rem;
 }
@@ -45,24 +45,45 @@ address{
 :root {
     color-scheme: light dark;
     /* defined in darkmode.js*/
-}
-
-body {
     /* Custom default properties */
     --text-color: #402116;
     --bkg-color: #f8f7ff;
     --heading-color: #593825;
     --link-color: #F2B705;
-    --bkg-light: linear-gradient(140deg, #db0101 2%, #f7a2c5 0.8%, #db0101 2.7%, #db0101 2.7%, #f7a2c5 0.8%, #db0101 3.6%, #db0101 2.7%, #D91448 5%, #F2B705 50%, #8C0327);
 
-    /* Applying custom properties */
+    /* Background image */
+    --bkg-light: url(/img/bg-tile.png);
+}
+
+body {
     background-color: var(--bkg-color);
     color: var(--text-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 
+    /* Apply the background image as a repeating tile */
+    background-image: var(--bkg-light);
+    background-repeat: repeat;
+    /* repeats horizontally + vertically */
+    background-position: top left;
+    /* starting point */
+    background-size: auto;
+    /* use image's natural size (remove if you want scaling) */
+}
+
+
+/* body {
+    --text-color: #402116;
+    --bkg-color: #f8f7ff;
+    --heading-color: #593825;
+    --link-color: #F2B705;
+     --bkg-light: linear-gradient(140deg, #db0101 2%, #f7a2c5 0.8%, #db0101 2.7%, #db0101 2.7%, #f7a2c5 0.8%, #db0101 3.6%, #db0101 2.7%, #D91448 5%, #F2B705 50%, #8C0327); 
+    background-color: var(--bkg-color);
+    color: var(--text-color);
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
     background: var(--bkg-light);
-}
+} */
 
 /* Body dark theme variables */
 body.dark-theme {
@@ -111,7 +132,9 @@ main a {
     font-size: 1.45rem;
 }
 
-main p, a, li {
+main p,
+a,
+li {
     font-family: 'Noto', sans-serif;
     letter-spacing: 0.1rem;
     line-height: 1.5;
@@ -163,7 +186,8 @@ section {
     margin: 2rem 1rem 0rem 1rem;
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
     border: none;
 }
 
@@ -242,8 +266,8 @@ section {
 }
 
 .home-link {
-color: var(--link-color);
-font-size: 2.5rem;
+    color: var(--link-color);
+    font-size: 2.5rem;
 }
 
 .index__aside__button01 {
